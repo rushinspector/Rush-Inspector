@@ -24,7 +24,7 @@ export default function Header() {
         >
           <div className="text-xs text-muted-foreground flex flex-col">
             <div>Mon - Sat 7am to 9pm</div>
-            <div>Sun, 10am to 4pm</div>
+            <div>Sun 10am to 4pm</div>
           </div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
