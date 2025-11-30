@@ -25,7 +25,7 @@ export default function Hero() {
             className="text-white space-y-6"
           >
             <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium text-sm mb-2 backdrop-blur-sm">
-              #1 Rated Rush Inspection Service
+              Inspections Booked Within 24 Hours - Guaranteed
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
               Close the deal <br/>
