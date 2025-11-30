@@ -23,7 +23,7 @@ export default function Header() {
           className="hidden md:flex items-center gap-12"
         >
           <div className="text-xs text-muted-foreground flex flex-col">
-            <div>Mon - Sat, 7am to 9pm</div>
+            <div>Mon - Sat 7am to 9pm</div>
             <div>Sun, 10am to 4pm</div>
           </div>
           <motion.div
