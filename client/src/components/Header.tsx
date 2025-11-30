@@ -20,10 +20,16 @@ export default function Header() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="hidden sm:flex flex-col items-end gap-1"
+          className="hidden sm:flex flex-col items-end gap-2"
         >
-          <a href="tel:(513)877-7874" className="text-sm font-medium text-primary hover:text-accent transition-colors">(513) 877 - RUSH</a>
-          <a href="tel:(513)877-7874" className="text-xs text-muted-foreground hover:text-accent transition-colors">(513) 877 - 7874</a>
+          <div className="flex flex-col items-end gap-1">
+            <a href="tel:(513)877-7874" className="text-sm font-medium text-primary hover:text-accent transition-colors">(513) 877 - RUSH</a>
+            <a href="tel:(513)877-7874" className="text-xs text-muted-foreground hover:text-accent transition-colors">(513) 877 - 7874</a>
+          </div>
+          <div className="text-xs text-muted-foreground pt-1 border-t border-gray-300">
+            <div>Mon - Sat: 7am - 9pm</div>
+            <div>Sun: 10am - 4pm</div>
+          </div>
         </motion.div>
       </div>
     </header>
