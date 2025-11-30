@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium text-sm mb-2 backdrop-blur-sm">Home Inspector Booked Within 24 Hours - Guaranteed</div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
               Close the deal <br/>
-              <span className="text-accent">fast.</span>
+              <span className="text-accent">book now.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-lg leading-relaxed">
               The premium concierge inspection service for top-tier real estate agents. We handle the logistics, you handle the closing.
