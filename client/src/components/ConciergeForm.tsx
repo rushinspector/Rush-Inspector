@@ -15,6 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { useMutation } from "@tanstack/react-query";
 
 const formSchema = z.object({
   agentName: z.string().min(2, "Agent name is required"),
@@ -24,9 +25,11 @@ const formSchema = z.object({
   notes: z.string().optional(),
 });
 
+type FormData = z.infer<typeof formSchema>;
+
 export default function ConciergeForm() {
   const { toast } = useToast();
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       agentName: "",
@@ -37,15 +40,43 @@ export default function ConciergeForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log("Form Submitted:", values);
-    // Simulate Airtable submission
-    toast({
-      title: "Request Received",
-      description: "We have received your rush inspection request. Our concierge will contact you shortly to confirm.",
-      duration: 5000,
-    });
-    form.reset();
+  const mutation = useMutation({
+    mutationFn: async (data: FormData) => {
+      const response = await fetch("/api/inspection-requests", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || "Failed to submit request");
+      }
+
+      return response.json();
+    },
+    onSuccess: () => {
+      toast({
+        title: "Request Received",
+        description: "We have received your rush inspection request. Our concierge will contact you shortly to confirm.",
+        duration: 5000,
+      });
+      form.reset();
+    },
+    onError: (error: Error) => {
+      toast({
+        title: "Submission Failed",
+        description: error.message,
+        variant: "destructive",
+        duration: 5000,
+      });
+    },
+  });
+
+  function onSubmit(values: FormData) {
+    mutation.mutate(values);
   }
 
   return (
@@ -71,7 +102,12 @@ export default function ConciergeForm() {
                   <FormItem>
                     <FormLabel>Agent Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Jane Doe" {...field} className="bg-white" />
+                      <Input 
+                        placeholder="Jane Doe" 
+                        {...field} 
+                        className="bg-white" 
+                        data-testid="input-agent-name"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -84,7 +120,12 @@ export default function ConciergeForm() {
                   <FormItem>
                     <FormLabel>Email Address</FormLabel>
                     <FormControl>
-                      <Input placeholder="jane@agency.com" {...field} className="bg-white" />
+                      <Input 
+                        placeholder="jane@agency.com" 
+                        {...field} 
+                        className="bg-white"
+                        data-testid="input-agent-email"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -97,7 +138,12 @@ export default function ConciergeForm() {
                   <FormItem>
                     <FormLabel>Property Address</FormLabel>
                     <FormControl>
-                      <Input placeholder="123 Main St, City" {...field} className="bg-white" />
+                      <Input 
+                        placeholder="123 Main St, City" 
+                        {...field} 
+                        className="bg-white"
+                        data-testid="input-property-address"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -110,7 +156,12 @@ export default function ConciergeForm() {
                   <FormItem>
                     <FormLabel>Preferred Date</FormLabel>
                     <FormControl>
-                      <Input type="date" {...field} className="bg-white" />
+                      <Input 
+                        type="date" 
+                        {...field} 
+                        className="bg-white"
+                        data-testid="input-preferred-date"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -126,15 +177,21 @@ export default function ConciergeForm() {
                       <Textarea 
                         placeholder="Lockbox code is 1234..." 
                         className="resize-none bg-white" 
-                        {...field} 
+                        {...field}
+                        data-testid="textarea-notes"
                       />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-lg h-12 shadow-md transition-all hover:scale-[1.02]">
-                Submit Request
+              <Button 
+                type="submit" 
+                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-lg h-12 shadow-md transition-all hover:scale-[1.02]"
+                disabled={mutation.isPending}
+                data-testid="button-submit-request"
+              >
+                {mutation.isPending ? "Submitting..." : "Submit Request"}
               </Button>
             </form>
           </Form>
