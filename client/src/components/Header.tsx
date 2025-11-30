@@ -22,8 +22,9 @@ export default function Header() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="hidden md:flex items-center gap-12"
         >
-          <div className="text-xs text-muted-foreground">
-            Mon - Sat 7am to 9pm and Sun 10am to 4pm
+          <div className="text-xs text-muted-foreground flex flex-col">
+            <div>Mon - Sat 7am to 9pm</div>
+            <div>Sun 10am to 4pm</div>
           </div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
