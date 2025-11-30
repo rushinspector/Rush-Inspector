@@ -28,9 +28,7 @@ export default function Hero() {
               Close the deal <br/>
               <span className="text-accent">book now.</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-lg leading-relaxed">
-              The premium concierge inspection service for top-tier real estate agents. We handle the logistics, you handle the closing.
-            </p>
+            <p className="text-lg md:text-xl text-gray-200 max-w-lg leading-relaxed">RushInspector is the on-demand service for last-minute home inspections. We guarantee a fully licensed inspector confirmed within 24 hours — or there is no charge. $349 flat fee; you pay the inspector directly.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <div className="flex items-center gap-2 text-sm font-medium text-gray-300">
