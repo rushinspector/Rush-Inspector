@@ -14,7 +14,6 @@ export default function Hero() {
           className="w-full h-full object-cover"
         />
       </div>
-
       <div className="container mx-auto px-4 relative z-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column: Copy */}
@@ -24,9 +23,7 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-white space-y-6"
           >
-            <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium text-sm mb-2 backdrop-blur-sm">
-              Inspections Booked Within 24 Hours - Guaranteed
-            </div>
+            <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium text-sm mb-2 backdrop-blur-sm">Home Inspection Booked Within 24 Hours - Guaranteed</div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
               Close the deal <br/>
               <span className="text-accent">faster.</span>
