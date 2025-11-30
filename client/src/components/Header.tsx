@@ -16,16 +16,15 @@ export default function Header() {
             <span className="font-display font-bold text-primary text-lg tracking-tight">Rush Inspector</span>
           </div>
         </motion.div>
-        <motion.nav
+        <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="hidden sm:flex items-center gap-8"
+          className="hidden sm:flex flex-col items-end gap-1"
         >
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">For Agents</a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Pricing</a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Contact</a>
-        </motion.nav>
+          <a href="tel:(513)877-7874" className="text-sm font-medium text-primary hover:text-accent transition-colors">(513) 877 - RUSH</a>
+          <a href="tel:(513)877-7874" className="text-xs text-muted-foreground hover:text-accent transition-colors">(513) 877 - 7874</a>
+        </motion.div>
       </div>
     </header>
   );
