@@ -13,9 +13,10 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L2 12L6 12L6 22L18 22L18 12L22 12L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-                <path d="M12 12L12 20" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-                <path d="M14 16L12 18L10 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M3 14L12 4L21 14" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M3 14V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V14" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 18V22" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                <path d="M13 20L12 22L11 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <span className="font-display font-bold text-primary tracking-tight text-[24px]">Rush Inspector</span>
