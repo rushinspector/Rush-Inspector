@@ -23,12 +23,12 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-white space-y-6"
           >
-            <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium mb-2 backdrop-blur-sm text-[15px]">Licensed Inspector Booked Within 24 Hours - Guaranteed</div>
-            <h1 className="md:text-6xl lg:text-7xl font-display font-bold text-[74px]">
+            <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium mb-2 backdrop-blur-sm text-[19px]">Licensed Inspector Booked Within 24 Hours - Guaranteed</div>
+            <h1 className="md:text-6xl lg:text-7xl font-display font-bold text-[93px]">
               Get an inspector <br/>
               <span className="text-accent">fast.</span>
             </h1>
-            <div className="md:text-2xl font-bold text-[#f8f8fa] -mt-4 text-[19px]">$349 coordination fee — inspector paid directly</div>
+            <div className="md:text-2xl font-bold text-[#f8f8fa] -mt-4 text-[24px]">$349 coordination fee — inspector paid directly</div>
             <p className="md:text-xl text-gray-200 max-w-lg mt-[11px] mb-[11px] text-[22px]">Rush Inspector quickly finds and books a fully licensed home inspector for your job. If we can’t secure one within 24 hours, you pay nothing.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
