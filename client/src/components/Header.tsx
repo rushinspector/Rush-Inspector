@@ -14,7 +14,7 @@ export default function Header() {
             <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
               <span className="text-white font-display font-bold text-sm">RI</span>
             </div>
-            <span className="font-display font-bold text-primary tracking-tight text-[20px]">Rush Inspector</span>
+            <span className="font-display font-bold text-primary tracking-tight text-[22px]">Rush Inspector</span>
           </div>
         </motion.div>
         <motion.div
