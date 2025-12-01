@@ -12,7 +12,11 @@ export default function Header() {
         >
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
-              <span className="text-white font-display font-bold text-sm">RI</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 8V16C6 17.1046 6.89543 18 8 18H12C14.2091 18 16 16.2091 16 14C16 12.3431 14.9228 11 13.5 11H12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 11V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M16 8L20 12L16 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
             <span className="font-display font-bold text-primary tracking-tight text-[22px]">Rush Inspector</span>
           </div>
