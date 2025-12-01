@@ -28,6 +28,7 @@ export default function Hero() {
               Get an inspector <br/>
               <span className="text-accent">fast.</span>
             </h1>
+            <div className="text-xl md:text-2xl font-bold text-accent">$349 coordination fee — inspector paid directly</div>
             <p className="text-lg md:text-xl text-gray-200 max-w-lg leading-relaxed">Rush Inspector quickly finds and books a fully licensed home inspector for your job. If we can’t secure one within 24 hours, you pay nothing.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
