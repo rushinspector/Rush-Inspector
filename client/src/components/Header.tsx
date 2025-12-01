@@ -19,7 +19,7 @@ export default function Header() {
                 <path d="M13 20L12 22L11 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="font-display font-bold text-primary tracking-tight text-[22px]">Rush Inspector</span>
+            <span className="font-display font-bold text-primary tracking-tight text-[24px]">Rush Inspector</span>
           </div>
         </motion.div>
         <motion.div
