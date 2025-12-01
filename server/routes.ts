@@ -26,11 +26,15 @@ export async function registerRoutes(
               },
               body: JSON.stringify({
                 fields: {
-                  'Agent Name': validatedData.agentName,
-                  'Agent Email': validatedData.agentEmail,
-                  'Property Address': validatedData.propertyAddress,
-                  'Preferred Date': validatedData.preferredDate,
-                  'Notes': validatedData.notes || '',
+                  'Full Name': validatedData.fullName,
+                  'Company Name': validatedData.companyName,
+                  'Phone Number': validatedData.phoneNumber,
+                  'Inspection Address': validatedData.inspectionAddress,
+                  'Sq. Ft.': validatedData.sqFt || '',
+                  'Inspection Date': validatedData.inspectionDate,
+                  'Time of Inspection': validatedData.timeOfInspection,
+                  'Add-ons': validatedData.addOns || '',
+                  'How did you hear about us?': validatedData.hearAboutUs || '',
                 }
               })
             }
