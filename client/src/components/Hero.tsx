@@ -23,7 +23,7 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-white space-y-6"
           >
-            <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium mb-2 backdrop-blur-sm text-[16px]">Licensed Inspector Booked Within 24 Hours - Guaranteed</div>
+            <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium mb-2 backdrop-blur-sm text-[15px]">Licensed Inspector Booked Within 24 Hours - Guaranteed</div>
             <h1 className="md:text-6xl lg:text-7xl font-display font-bold text-[74px]">
               Get an inspector <br/>
               <span className="text-accent">fast.</span>
