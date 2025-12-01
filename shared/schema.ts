@@ -19,11 +19,15 @@ export type User = typeof users.$inferSelect;
 
 export const inspectionRequests = pgTable("inspection_requests", {
   id: serial("id").primaryKey(),
-  agentName: text("agent_name").notNull(),
-  agentEmail: text("agent_email").notNull(),
-  propertyAddress: text("property_address").notNull(),
-  preferredDate: text("preferred_date").notNull(),
-  notes: text("notes"),
+  fullName: text("full_name").notNull(),
+  companyName: text("company_name").notNull(),
+  phoneNumber: text("phone_number").notNull(),
+  inspectionAddress: text("inspection_address").notNull(),
+  sqFt: text("sq_ft"),
+  inspectionDate: text("inspection_date").notNull(),
+  timeOfInspection: text("time_of_inspection").notNull(),
+  addOns: text("add_ons"),
+  hearAboutUs: text("hear_about_us"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
