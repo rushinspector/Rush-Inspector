@@ -25,8 +25,8 @@ export default function Hero() {
           >
             <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium text-sm mb-2 backdrop-blur-sm">Licensed Inspector Booked Within 24 Hours - Guaranteed</div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
-              Get the deal <br/>
-              <span className="text-accent">closed.</span>
+              Get an inspector <br/>
+              <span className="text-accent">fast.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-lg leading-relaxed">Rush Inspector is the on-demand service for last-minute home inspections. Fully licensed inspector booked within 24 hours — or there is no charge. $349 flat fee; you pay the inspector directly.</p>
             
