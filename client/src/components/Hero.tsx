@@ -32,7 +32,7 @@ export default function Hero() {
             <p className="md:text-xl text-gray-200 max-w-lg mt-[11px] mb-[11px] text-[22px]">Rush Inspector quickly finds and books a fully licensed home inspector for your job. If we can’t secure one within 24 hours, you pay nothing.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <div className="flex items-center gap-2 text-sm font-medium text-gray-300">
+              <div className="flex items-center gap-2 font-medium text-gray-300 text-[16px]">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
