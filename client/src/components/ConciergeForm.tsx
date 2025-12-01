@@ -89,7 +89,7 @@ export default function ConciergeForm() {
         <CardHeader>
           <CardTitle className="text-2xl font-display text-primary">Book a Rush Home Inspection</CardTitle>
           <CardDescription>
-            Fill out the details below and our concierge team will handle the rest.
+            Fill out the details below — we'll reply within 30 minutes.
           </CardDescription>
         </CardHeader>
         <CardContent>
