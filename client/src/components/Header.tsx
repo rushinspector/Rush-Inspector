@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Phone } from "lucide-react";
 
 export default function Header() {
   return (
@@ -32,7 +33,7 @@ export default function Header() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="flex flex-col items-end gap-1"
           >
-            <a href="tel:(513)877-7874" className="text-sm font-medium text-primary hover:text-accent transition-colors underline">(513) 877 - RUSH</a>
+            <a href="tel:(513)877-7874" className="text-sm font-medium text-primary hover:text-accent transition-colors underline underline-offset-2 flex items-center gap-1.5"><Phone className="w-4 h-4" />(513) 877 - RUSH</a>
             <a href="tel:(513)877-7874" className="text-xs text-muted-foreground hover:text-accent transition-colors">(513) 877 - 7874</a>
           </motion.div>
         </motion.div>
