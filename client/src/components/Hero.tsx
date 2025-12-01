@@ -54,6 +54,9 @@ export default function Hero() {
 
           {/* Right Column: Form */}
           <div className="lg:pl-12">
+            <div className="mb-4 text-xs text-gray-400 max-w-sm">
+              $349 coordination fee. Inspector paid directly. We match licensed & insured professionals — verify independently.
+            </div>
             <ConciergeForm />
           </div>
         </div>
