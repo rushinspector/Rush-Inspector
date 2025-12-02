@@ -119,7 +119,7 @@ export default function ConciergeForm() {
                       <FormLabel>Full Name</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="Jane Doe" 
+                          placeholder="" 
                           {...field} 
                           className="bg-white" 
                           data-testid="input-full-name"
