@@ -230,37 +230,22 @@ export default function ConciergeForm() {
                 <FormField
                   control={form.control}
                   name="timeOfInspection"
-                  render={({ field }) => {
-                    const inputRef = React.useRef<HTMLInputElement>(null);
-                    const handleClick = () => {
-                      if (inputRef.current) {
-                        inputRef.current.focus();
-                        inputRef.current.click();
-                      }
-                    };
-                    return (
-                      <FormItem>
-                        <FormLabel>Time of Inspection</FormLabel>
-                        <FormControl>
-                          <div 
-                            onClick={handleClick}
-                            className="cursor-pointer w-full"
-                          >
-                            <Input 
-                              ref={inputRef}
-                              type="time" 
-                              value={field.value}
-                              onChange={field.onChange}
-                              onBlur={field.onBlur}
-                              className="bg-white cursor-pointer"
-                              data-testid="input-time-of-inspection"
-                            />
-                          </div>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    );
-                  }}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Time of Inspection</FormLabel>
+                      <FormControl>
+                        <input 
+                          type="time" 
+                          value={field.value || ""}
+                          onChange={(e) => field.onChange(e.target.value)}
+                          onBlur={field.onBlur}
+                          className="w-full px-3 py-2 border border-input rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-accent cursor-pointer"
+                          data-testid="input-time-of-inspection"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
               </div>
 
