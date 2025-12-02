@@ -1,3 +1,4 @@
+import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -229,20 +230,29 @@ export default function ConciergeForm() {
                 <FormField
                   control={form.control}
                   name="timeOfInspection"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Time of Inspection</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="time" 
-                          {...field} 
-                          className="bg-white cursor-pointer"
-                          data-testid="input-time-of-inspection"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
+                  render={({ field }) => {
+                    const inputRef = React.useRef<HTMLInputElement>(null);
+                    return (
+                      <FormItem>
+                        <FormLabel>Time of Inspection</FormLabel>
+                        <FormControl>
+                          <div 
+                            onClick={() => inputRef.current?.click()}
+                            className="cursor-pointer"
+                          >
+                            <Input 
+                              ref={inputRef}
+                              type="time" 
+                              {...field} 
+                              className="bg-white cursor-pointer"
+                              data-testid="input-time-of-inspection"
+                            />
+                          </div>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    );
+                  }}
                 />
               </div>
 
