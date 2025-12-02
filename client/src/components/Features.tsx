@@ -14,7 +14,7 @@ const features = [
   },
   {
     icon: UserCheck,
-    title: "Agent Concierge",
+    title: "Agent Support",
     description: "We communicate directly with you. No confusing scheduling loops. One form, and we handle the coordination.",
   },
 ];
