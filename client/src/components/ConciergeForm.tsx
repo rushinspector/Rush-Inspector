@@ -2,6 +2,9 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import TimePicker from "react-time-picker";
+import "react-time-picker/dist/TimePicker.css";
+import "react-clock/dist/Clock.css";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -234,14 +237,17 @@ export default function ConciergeForm() {
                     <FormItem>
                       <FormLabel>Time of Inspection</FormLabel>
                       <FormControl>
-                        <input 
-                          type="time" 
-                          value={field.value || ""}
-                          onChange={(e) => field.onChange(e.target.value)}
-                          onBlur={field.onBlur}
-                          className="w-full px-3 py-2 border border-input rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-accent cursor-pointer"
-                          data-testid="input-time-of-inspection"
-                        />
+                        <div className="[&_.react-time-picker]:w-full [&_.react-time-picker]:border [&_.react-time-picker]:border-input [&_.react-time-picker]:rounded-md [&_.react-time-picker]:bg-white">
+                          <TimePicker
+                            value={field.value || null}
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            disableClock={false}
+                            format="HH:mm"
+                            className="w-full"
+                            data-testid="input-time-of-inspection"
+                          />
+                        </div>
                       </FormControl>
                       <FormMessage />
                     </FormItem>
