@@ -78,9 +78,7 @@ export default function Terms() {
 
             <section>
               <h2 className="font-semibold text-lg text-primary mb-2">8. Governing Law</h2>
-              <p>
-                These Terms shall be governed by and construed in accordance with the laws of the State of Ohio, without regard to conflict of law principles. Any dispute arising under these Terms shall be resolved exclusively in the state or federal courts located in Highland, Ohio.
-              </p>
+              <p>These Terms shall be governed by and construed in accordance with the laws of the State of Ohio, without regard to conflict of law principles. Any dispute arising under these Terms shall be resolved exclusively in the state or federal courts located in Highland County, Ohio.</p>
             </section>
 
             <section>
