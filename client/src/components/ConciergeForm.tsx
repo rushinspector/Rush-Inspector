@@ -137,7 +137,7 @@ export default function ConciergeForm() {
                       <FormLabel>Company Name</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="ABC Realty" 
+                          placeholder="" 
                           {...field} 
                           className="bg-white"
                           data-testid="input-company-name"
@@ -158,7 +158,7 @@ export default function ConciergeForm() {
                       <FormLabel>Phone Number</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="(513) 123-4567" 
+                          placeholder="" 
                           {...field} 
                           className="bg-white"
                           data-testid="input-phone-number"
@@ -176,7 +176,7 @@ export default function ConciergeForm() {
                       <FormLabel>Sq. Ft.</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="2,500" 
+                          placeholder="" 
                           {...field} 
                           className="bg-white"
                           data-testid="input-sq-ft"
@@ -196,7 +196,7 @@ export default function ConciergeForm() {
                     <FormLabel>Inspection Address</FormLabel>
                     <FormControl>
                       <Input 
-                        placeholder="123 Main St, City, State" 
+                        placeholder="" 
                         {...field} 
                         className="bg-white"
                         data-testid="input-inspection-address"
@@ -254,7 +254,7 @@ export default function ConciergeForm() {
                     <FormLabel>Add-ons</FormLabel>
                     <FormControl>
                       <Textarea 
-                        placeholder="Radon testing, mold inspection, etc." 
+                        placeholder="" 
                         className="resize-none bg-white" 
                         {...field}
                         data-testid="textarea-add-ons"
