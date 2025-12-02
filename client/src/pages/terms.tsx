@@ -1,14 +1,13 @@
-import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
 export default function Terms() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <Link href="/" className="inline-flex items-center gap-2 text-primary hover:underline mb-8" data-testid="link-back-home">
+        <a href="/" className="inline-flex items-center gap-2 text-primary hover:underline mb-8 cursor-pointer" data-testid="link-back-home">
           <ArrowLeft className="w-4 h-4" />
           Back to Home
-        </Link>
+        </a>
 
         <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
           <h1 className="font-display text-3xl md:text-4xl font-bold text-primary mb-2" data-testid="text-terms-title">
