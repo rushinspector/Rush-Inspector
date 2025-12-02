@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -230,29 +229,20 @@ export default function ConciergeForm() {
                 <FormField
                   control={form.control}
                   name="timeOfInspection"
-                  render={({ field }) => {
-                    const inputRef = React.useRef<HTMLInputElement>(null);
-                    return (
-                      <FormItem>
-                        <FormLabel>Time of Inspection</FormLabel>
-                        <FormControl>
-                          <div 
-                            onClick={() => inputRef.current?.click()}
-                            className="cursor-pointer"
-                          >
-                            <Input 
-                              ref={inputRef}
-                              type="time" 
-                              {...field} 
-                              className="bg-white cursor-pointer"
-                              data-testid="input-time-of-inspection"
-                            />
-                          </div>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    );
-                  }}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Time of Inspection</FormLabel>
+                      <FormControl>
+                        <Input 
+                          type="time" 
+                          {...field} 
+                          className="bg-white cursor-pointer"
+                          data-testid="input-time-of-inspection"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
               </div>
 
@@ -282,18 +272,11 @@ export default function ConciergeForm() {
                   <FormItem>
                     <FormLabel>How did you hear about us?</FormLabel>
                     <FormControl>
-                      <select 
+                      <Input 
                         {...field} 
-                        className="w-full px-3 py-2 border border-input rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                        data-testid="select-hear-about-us"
-                      >
-                        <option value="">Select an option</option>
-                        <option value="google">Google Search</option>
-                        <option value="referral">Referral</option>
-                        <option value="social">Social Media</option>
-                        <option value="friend">Friend/Family</option>
-                        <option value="other">Other</option>
-                      </select>
+                        className="bg-white"
+                        data-testid="input-hear-about-us"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
