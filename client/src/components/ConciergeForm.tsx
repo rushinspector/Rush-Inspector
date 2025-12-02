@@ -295,7 +295,7 @@ export default function ConciergeForm() {
                 By submitting, you agree to our{" "}
                 <a href="/terms" className="underline hover:text-gray-600" data-testid="link-terms">Terms of Service</a>
                 {" "}and{" "}
-                <a href="/terms" className="underline hover:text-gray-600" data-testid="link-privacy">Privacy Policy</a>.
+                <a href="/privacy" className="underline hover:text-gray-600" data-testid="link-privacy">Privacy Policy</a>.
               </p>
             </form>
           </Form>
