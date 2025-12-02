@@ -1,0 +1,10 @@
+{
+  "name": "client-build",
+  "private": true,
+  "scripts": {
+    "build": "tsx script/build.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0"
+  }
+}
