@@ -15,7 +15,8 @@ export default function Header() {
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 14L12 4L21 14" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M3 14V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V14" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 18L14 22L10 22Z" stroke="white" strokeWidth="1.5" fill="white"/>
+                <path d="M12 20L9 17M12 20L15 17" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 17V10" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
               </svg>
             </div>
             <span className="font-display font-bold text-primary tracking-tight text-[24px]">Rush Inspector</span>
