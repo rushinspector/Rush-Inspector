@@ -2,9 +2,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import TimePicker from "react-time-picker";
-import "react-time-picker/dist/TimePicker.css";
-import "react-clock/dist/Clock.css";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -233,25 +230,29 @@ export default function ConciergeForm() {
                 <FormField
                   control={form.control}
                   name="timeOfInspection"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Time of Inspection</FormLabel>
-                      <FormControl>
-                        <div className="[&_.react-time-picker]:w-full [&_.react-time-picker]:border [&_.react-time-picker]:border-input [&_.react-time-picker]:rounded-md [&_.react-time-picker]:bg-white">
-                          <TimePicker
-                            value={field.value || null}
-                            onChange={field.onChange}
-                            onBlur={field.onBlur}
-                            disableClock={false}
-                            format="HH:mm"
-                            className="w-full"
-                            data-testid="input-time-of-inspection"
-                          />
-                        </div>
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
+                  render={({ field }) => {
+                    const inputRef = React.useRef<HTMLInputElement>(null);
+                    return (
+                      <FormItem>
+                        <FormLabel>Time of Inspection</FormLabel>
+                        <FormControl>
+                          <div 
+                            onClick={() => inputRef.current?.click()}
+                            className="cursor-pointer"
+                          >
+                            <Input 
+                              ref={inputRef}
+                              type="time" 
+                              {...field} 
+                              className="bg-white cursor-pointer"
+                              data-testid="input-time-of-inspection"
+                            />
+                          </div>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    );
+                  }}
                 />
               </div>
 
