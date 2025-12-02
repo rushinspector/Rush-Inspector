@@ -13,7 +13,7 @@ export default function Terms() {
           <h1 className="font-display text-3xl md:text-4xl font-bold text-primary mb-2" data-testid="text-terms-title">
             Rush Inspector – Terms of Service
           </h1>
-          <p className="text-gray-500 mb-8">Last updated: December 2025</p>
+          <p className="text-gray-500 mb-8">Last updated: December 1, 2025</p>
 
           <div className="space-y-8 text-gray-700 leading-relaxed">
             <section>
