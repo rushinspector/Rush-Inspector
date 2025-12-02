@@ -76,22 +76,15 @@ export default function Terms() {
               </p>
             </section>
 
-            <section id="privacy">
-              <h2 className="font-semibold text-lg text-primary mb-2">8. Privacy Policy</h2>
+            <section>
+              <h2 className="font-semibold text-lg text-primary mb-2">8. Governing Law</h2>
               <p>
-                Personal information collected is used solely to facilitate the matching process and will not be sold, rented, or shared with third parties except as necessary to connect you with an inspector.
+                These Terms shall be governed by and construed in accordance with the laws of the State of Ohio, without regard to conflict of law principles. Any dispute arising under these Terms shall be resolved exclusively in the state or federal courts located in Highland, Ohio.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg text-primary mb-2">9. Governing Law</h2>
-              <p>
-                These Terms shall be governed by and construed in accordance with the laws of the State of Ohio, without regard to conflict of law principles. Any dispute arising under these Terms shall be resolved exclusively in the state or federal courts located in Ohio.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg text-primary mb-2">10. Modification of Terms</h2>
+              <h2 className="font-semibold text-lg text-primary mb-2">9. Modification of Terms</h2>
               <p>
                 Rush Inspector reserves the right to modify these Terms at any time. Continued use of the service after posted changes constitutes acceptance of the modified terms.
               </p>
