@@ -238,6 +238,7 @@ export default function ConciergeForm() {
                           {...field} 
                           className="bg-white"
                           data-testid="input-time-of-inspection"
+                          onFocus={(e) => e.currentTarget.showPicker?.()}
                         />
                       </FormControl>
                       <FormMessage />
