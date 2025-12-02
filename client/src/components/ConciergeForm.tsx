@@ -298,7 +298,7 @@ export default function ConciergeForm() {
               >
                 {mutation.isPending ? "Submitting..." : "Submit Request"}
               </Button>
-              <p className="text-xs text-gray-400 text-center mt-3">By submitting, you agree to our Terms of Service and Privacy Policy.</p>
+              <p className="text-xs text-gray-400 text-center mt-1">By submitting, you agree to our Terms of Service and Privacy Policy.</p>
             </form>
           </Form>
         </CardContent>
