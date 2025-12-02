@@ -254,7 +254,7 @@ export default function ConciergeForm() {
                     <FormLabel>Add-ons</FormLabel>
                     <FormControl>
                       <Textarea 
-                        placeholder="" 
+                        placeholder="Radon testing, mold inspection, etc." 
                         className="resize-none bg-white" 
                         {...field}
                         data-testid="textarea-add-ons"
