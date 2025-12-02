@@ -12,11 +12,10 @@ export default function Header() {
         >
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 14L12 4L21 14" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M3 14V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V14" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 20L9 17M12 20L15 17" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 17V10" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 15L3 21C3 21.5304 3.21071 22.0391 3.58579 22.4142C3.96086 22.7893 4.46957 23 5 23L19 23C19.5304 23 20.0391 22.7893 20.4142 22.4142C20.7893 22.0391 21 21.5304 21 21L21 15" fill="white"/>
+                <path d="M12 4L3 13L7 13L7 21L17 21L17 13L21 13L12 4Z" fill="white"/>
+                <path d="M12 17L10 15M12 17L14 15M12 17L12 11" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <span className="font-display font-bold text-primary tracking-tight text-[24px]">Rush Inspector</span>
