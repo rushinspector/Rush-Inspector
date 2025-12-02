@@ -232,18 +232,26 @@ export default function ConciergeForm() {
                   name="timeOfInspection"
                   render={({ field }) => {
                     const inputRef = React.useRef<HTMLInputElement>(null);
+                    const handleClick = () => {
+                      if (inputRef.current) {
+                        inputRef.current.focus();
+                        inputRef.current.click();
+                      }
+                    };
                     return (
                       <FormItem>
                         <FormLabel>Time of Inspection</FormLabel>
                         <FormControl>
                           <div 
-                            onClick={() => inputRef.current?.click()}
-                            className="cursor-pointer"
+                            onClick={handleClick}
+                            className="cursor-pointer w-full"
                           >
                             <Input 
                               ref={inputRef}
                               type="time" 
-                              {...field} 
+                              value={field.value}
+                              onChange={field.onChange}
+                              onBlur={field.onBlur}
                               className="bg-white cursor-pointer"
                               data-testid="input-time-of-inspection"
                             />
