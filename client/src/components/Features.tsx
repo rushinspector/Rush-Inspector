@@ -5,7 +5,7 @@ const features = [
   {
     icon: Clock,
     title: "Priority Response",
-    description: "We prioritize your request. Inspections scheduled within 24-48 hours and reports delivered same-day.",
+    description: "We prioritize your request and notify our inspector network immediately — you'll hear back fast.",
   },
   {
     icon: ShieldCheck,
