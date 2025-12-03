@@ -247,7 +247,7 @@ export default function ConciergeForm() {
                             </button>
                           </FormControl>
                         </PopoverTrigger>
-                        <PopoverContent className="w-auto p-1" align="start">
+                        <PopoverContent className="w-auto p-0" align="start">
                           <Calendar
                             mode="single"
                             selected={selectedDate}
@@ -262,7 +262,13 @@ export default function ConciergeForm() {
                               date < new Date(new Date().setHours(0, 0, 0, 0))
                             }
                             initialFocus
-                            className="text-xs [--cell-size:1.25rem] p-2"
+                            className="text-[10px] [--cell-size:1rem] p-1 scale-90 origin-top-left"
+                            classNames={{
+                              month: "flex w-full flex-col gap-1",
+                              week: "mt-0.5 flex w-full",
+                              caption_label: "text-xs",
+                              weekday: "text-[9px]",
+                            }}
                           />
                         </PopoverContent>
                       </Popover>
