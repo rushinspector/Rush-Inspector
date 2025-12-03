@@ -311,7 +311,7 @@ export default function ConciergeForm() {
                             </SelectValue>
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent>
+                        <SelectContent className="max-h-48">
                           {timeSlots.map((time) => (
                             <SelectItem key={time} value={time} data-testid={`select-time-${time.replace(/[: ]/g, '-')}`}>
                               {time}
