@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-3">
+    <footer className="bg-primary text-white pt-3 pb-4">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap gap-6 md:gap-10">
           {/* Brand */}
