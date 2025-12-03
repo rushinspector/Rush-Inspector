@@ -17,7 +17,7 @@ export default function Footer() {
 
           {/* Contact & Legal */}
           <div className="text-sm">
-            <div>
+            <div className="text-[12px]">
               <h4 className="text-sm font-bold mb-3">Contact</h4>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center gap-2">
