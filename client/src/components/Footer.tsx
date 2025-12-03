@@ -11,7 +11,7 @@ export default function Footer() {
               Rush <span className="text-accent">Inspector</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              The leading platform connecting real estate professionals with fast, high-quality home inspections.
+              The platform connecting real estate professionals with fast, high-quality home inspections.
             </p>
           </div>
 
