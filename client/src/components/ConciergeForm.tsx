@@ -29,11 +29,11 @@ const formSchema = z.object({
   companyName: z.string().min(2, "Company name is required"),
   phoneNumber: z.string().min(10, "Valid phone number is required"),
   inspectionAddress: z.string().min(5, "Inspection address is required"),
-  sqFt: z.string().optional(),
+  sqFt: z.string().min(1, "Square footage is required"),
   inspectionDate: z.string().min(1, "Inspection date is required"),
   timeOfInspection: z.string().min(1, "Time of inspection is required"),
-  addOns: z.string().optional(),
-  hearAboutUs: z.string().optional(),
+  addOns: z.string().min(1, "Add-ons field is required"),
+  hearAboutUs: z.string().min(1, "Please tell us how you heard about us"),
 });
 
 type FormData = z.infer<typeof formSchema>;
