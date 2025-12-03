@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium mb-2 backdrop-blur-sm text-[14px]">24-Hour Inspector Match Guarantee</div>
             <h1 className="md:text-6xl lg:text-7xl font-display font-bold text-[69px] leading-[1.15]">
               All your inspectors <br/>
-              <span className="text-accent">fast.</span>
+              <span className="text-accent">booked?</span>
             </h1>
             <div className="md:text-xl font-bold text-[#f8f8fa] -mt-4 text-[19px]">$349 coordination fee — inspector paid directly</div>
             <p className="md:text-xl text-gray-200 max-w-lg mt-[11px] mb-[11px] text-[18px]">We'll find you licensed home inspector in 24 hours. If we can't secure one, you pay nothing.</p>
