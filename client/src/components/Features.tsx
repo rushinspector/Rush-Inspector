@@ -10,7 +10,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Certified Excellence",
-    description: "Our inspectors are ASHI certified, fully insured, and vetted for professionalism and attention to detail.",
+    description: "All inspectors in our network are required to hold current Ohio licenses and active insurance.",
   },
   {
     icon: UserCheck,
