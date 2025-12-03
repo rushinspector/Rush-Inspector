@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
         </div>
-        <div className="mt-2 flex justify-end">
+        <div className="mt-2 flex justify-center">
           <p className="text-[10px] text-gray-500">
             © {new Date().getFullYear()} Rush Inspector. All rights reserved.
           </p>
