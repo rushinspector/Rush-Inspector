@@ -174,3 +174,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-right: auto;
   margin-left: 0;
 }
+
+/* Hide browser default time input placeholder */
+input[type="time"]::-webkit-datetime-edit-text,
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+  visibility: hidden;
+  position: absolute;
+}
+
+input[type="time"]:focus::-webkit-datetime-edit-fields-wrapper,
+input[type="time"]:not(:placeholder-shown)::-webkit-datetime-edit-fields-wrapper {
+  visibility: visible;
+  position: static;
+}
+
+input[type="time"] {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 0;
+}
