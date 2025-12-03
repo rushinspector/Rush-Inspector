@@ -34,14 +34,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
-          <div className="text-[10px]">
-            <h4 className="text-xs font-bold mb-1.5">Legal</h4>
-            <ul className="space-y-1 text-gray-400">
-              <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
-            </ul>
-          </div>
         </div>
         <div className="mt-2 flex justify-end">
           <p className="text-[10px] text-gray-500">
