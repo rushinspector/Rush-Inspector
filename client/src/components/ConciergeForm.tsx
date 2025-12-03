@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { format } from "date-fns";
-import { CalendarIcon, Clock } from "lucide-react";
+import { ChevronDown, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -227,26 +227,24 @@ export default function ConciergeForm() {
                   control={form.control}
                   name="inspectionDate"
                   render={({ field }) => (
-                    <FormItem className="flex flex-col">
+                    <FormItem>
                       <FormLabel>Inspection Date</FormLabel>
                       <Popover open={datePickerOpen} onOpenChange={setDatePickerOpen}>
                         <PopoverTrigger asChild>
                           <FormControl>
-                            <Button
-                              variant="outline"
+                            <button
+                              type="button"
                               className={cn(
-                                "w-full pl-3 text-left font-normal bg-white",
+                                "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-white px-3 py-2 text-sm shadow-sm ring-offset-background focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50",
                                 !field.value && "text-muted-foreground"
                               )}
                               data-testid="button-inspection-date"
                             >
-                              {field.value ? (
-                                format(new Date(field.value), "PPP")
-                              ) : (
-                                <span>Pick a date</span>
-                              )}
-                              <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                            </Button>
+                              <span className="line-clamp-1">
+                                {field.value ? format(new Date(field.value), "PPP") : "Select date"}
+                              </span>
+                              <ChevronDown className="h-4 w-4 opacity-50" />
+                            </button>
                           </FormControl>
                         </PopoverTrigger>
                         <PopoverContent className="w-auto p-0" align="start">
