@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white pt-3 pb-4">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap gap-6 md:gap-10">
+        <div className="grid grid-cols-3 gap-8">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-display font-bold text-white mb-2">
               Rush <span className="text-accent">Inspector</span>
             </h3>
-            <p className="text-gray-400 text-xs leading-relaxed max-w-xs">
+            <p className="text-gray-400 text-xs leading-relaxed">
               The platform connecting real estate professionals with fast, high-quality home inspections.
             </p>
           </div>
