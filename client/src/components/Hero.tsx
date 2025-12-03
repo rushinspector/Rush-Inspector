@@ -29,7 +29,7 @@ export default function Hero() {
               <span className="text-accent">booked?</span>
             </h1>
             <p className="md:text-xl text-gray-200 max-w-lg mt-[11px] mb-[11px] text-[18px]">We'll find you licensed home inspector in 24 hours. If we can't secure one, you pay nothing.</p>
-            <div className="md:text-xl font-bold text-[#f8f8fa] -mt-4 text-[19px]">$349 coordination fee — inspector paid directly</div>
+            <div className="md:text-xl font-bold text-[#f8f8fa] -mt-4 text-[17px]">$349 coordination fee — inspector paid directly</div>
             
             <div className="flex flex-col sm:flex-row gap-2 pt-4">
               <div className="flex items-center gap-2 font-medium text-gray-300 text-[16px]">
