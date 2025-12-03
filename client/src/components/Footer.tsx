@@ -2,15 +2,15 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-5">
+    <footer className="bg-primary text-white py-3">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap gap-8 md:gap-12">
+        <div className="flex flex-wrap gap-6 md:gap-10">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-display font-bold text-white mb-4">
+            <h3 className="text-xl font-display font-bold text-white mb-2">
               Rush <span className="text-accent">Inspector</span>
             </h3>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-400 text-xs leading-relaxed max-w-xs">
               The platform connecting real estate professionals with fast, high-quality home inspections.
             </p>
           </div>
@@ -40,8 +40,8 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-4 flex justify-end">
-          <p className="text-xs text-gray-500">
+        <div className="mt-2 flex justify-end">
+          <p className="text-[10px] text-gray-500">
             © {new Date().getFullYear()} Rush Inspector. All rights reserved.
           </p>
         </div>
