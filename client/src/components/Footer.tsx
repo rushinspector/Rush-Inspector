@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold text-white mb-4">
@@ -34,25 +34,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Links */}
-          <div>
-            <h4 className="text-lg font-bold mb-6">Quick Links</h4>
-            <ul className="space-y-3 text-gray-300">
-              <li><a href="#" className="hover:text-accent transition-colors">Book Inspection</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">For Agents</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Sample Report</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Pricing</a></li>
-            </ul>
-          </div>
-
           {/* Legal */}
           <div>
             <h4 className="text-lg font-bold mb-6">Legal</h4>
             <ul className="space-y-3 text-gray-300">
-              <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Terms of Service</a></li>
+              <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
               <li className="text-xs text-gray-500 pt-4">
-                © {new Date().getFullYear()} Rush Home Inspection Concierge. All rights reserved.
+                © {new Date().getFullYear()} Rush Inspector. All rights reserved.
               </li>
             </ul>
           </div>
