@@ -143,3 +143,27 @@
     @apply font-display;
   }
 }
+
+/* Hide browser default date input placeholder */
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  visibility: hidden;
+  position: absolute;
+}
+
+input[type="date"]:focus::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]:not(:placeholder-shown)::-webkit-datetime-edit-fields-wrapper {
+  visibility: visible;
+  position: static;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
