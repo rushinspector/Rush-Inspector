@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-4 text-right pr-8">
+        <div className="mt-4 flex justify-end">
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} Rush Inspector. All rights reserved.
           </p>
