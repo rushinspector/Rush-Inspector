@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-3">
+    <footer className="bg-primary text-white py-2">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap gap-6 md:gap-10">
           {/* Brand */}
@@ -40,7 +40,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-1 flex justify-end">
+        <div className="-mt-1 flex justify-end">
           <p className="text-[10px] text-gray-500">
             © {new Date().getFullYear()} Rush Inspector. All rights reserved.
           </p>
