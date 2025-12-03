@@ -247,44 +247,23 @@ export default function ConciergeForm() {
                             </button>
                           </FormControl>
                         </PopoverTrigger>
-                        <PopoverContent className="w-auto p-0" align="start">
+                        <PopoverContent className="w-auto p-1" align="start">
                           <Calendar
                             mode="single"
                             selected={selectedDate}
                             onSelect={(date) => {
                               setSelectedDate(date);
+                              if (date) {
+                                field.onChange(format(date, "yyyy-MM-dd"));
+                                setDatePickerOpen(false);
+                              }
                             }}
                             disabled={(date) =>
                               date < new Date(new Date().setHours(0, 0, 0, 0))
                             }
                             initialFocus
-                            className="text-xs [--cell-size:1.5rem]"
+                            className="text-xs [--cell-size:1.25rem] p-2"
                           />
-                          <div className="p-3 border-t flex justify-end gap-2">
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              onClick={() => {
-                                setDatePickerOpen(false);
-                              }}
-                              data-testid="button-date-cancel"
-                            >
-                              Cancel
-                            </Button>
-                            <Button
-                              size="sm"
-                              onClick={() => {
-                                if (selectedDate) {
-                                  field.onChange(format(selectedDate, "yyyy-MM-dd"));
-                                }
-                                setDatePickerOpen(false);
-                              }}
-                              disabled={!selectedDate}
-                              data-testid="button-date-confirm"
-                            >
-                              Confirm
-                            </Button>
-                          </div>
                         </PopoverContent>
                       </Popover>
                       <FormMessage />
