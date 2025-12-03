@@ -20,7 +20,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { Calendar } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useMutation } from "@tanstack/react-query";
@@ -216,15 +215,12 @@ export default function ConciergeForm() {
                     <FormItem>
                       <FormLabel>Inspection Date</FormLabel>
                       <FormControl>
-                        <div className="relative">
-                          <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
-                          <Input 
-                            type="date" 
-                            {...field} 
-                            className="bg-white pl-10"
-                            data-testid="input-inspection-date"
-                          />
-                        </div>
+                        <Input 
+                          type="date" 
+                          {...field} 
+                          className="bg-white"
+                          data-testid="input-inspection-date"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
