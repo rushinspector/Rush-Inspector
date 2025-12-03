@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-2 gap-12">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold text-white mb-4">
@@ -15,10 +15,10 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Legal */}
           <div>
-            <h4 className="text-lg font-bold mb-6">Contact Us</h4>
-            <ul className="space-y-4 text-gray-300">
+            <h4 className="text-lg font-bold mb-6">Contact</h4>
+            <ul className="space-y-4 text-gray-300 mb-8">
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent" />
                 <span>(513) 877-7874</span>
@@ -32,18 +32,15 @@ export default function Footer() {
                 <span>Cincinnati, OH</span>
               </li>
             </ul>
-          </div>
 
-          {/* Legal */}
-          <div>
-            <h4 className="text-lg font-bold mb-6">Legal</h4>
+            <h4 className="text-lg font-bold mb-4">Legal</h4>
             <ul className="space-y-3 text-gray-300">
               <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
               <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
-              <li className="text-xs text-gray-500 pt-4">
-                © {new Date().getFullYear()} Rush Inspector. All rights reserved.
-              </li>
             </ul>
+            <p className="text-xs text-gray-500 pt-6">
+              © {new Date().getFullYear()} Rush Inspector. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
