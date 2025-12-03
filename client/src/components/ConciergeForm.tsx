@@ -258,6 +258,7 @@ export default function ConciergeForm() {
                               date < new Date(new Date().setHours(0, 0, 0, 0))
                             }
                             initialFocus
+                            className="text-xs [--cell-size:1.5rem]"
                           />
                           <div className="p-3 border-t flex justify-end gap-2">
                             <Button
