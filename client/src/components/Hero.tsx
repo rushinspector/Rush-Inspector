@@ -29,7 +29,7 @@ export default function Hero() {
               <span className="text-accent">fast.</span>
             </h1>
             <div className="md:text-xl font-bold text-[#f8f8fa] -mt-4 text-[19px]">$349 coordination fee — inspector paid directly</div>
-            <p className="md:text-xl text-gray-200 max-w-lg mt-[11px] mb-[11px] text-[19px]">Rush Inspector quickly finds and books a fully licensed home inspector for your job. If we can’t secure one within 24 hours, you pay nothing.</p>
+            <p className="md:text-xl text-gray-200 max-w-lg mt-[11px] mb-[11px] text-[18px]">Rush Inspector quickly finds and books a fully licensed home inspector for your job. If we can’t secure one within 24 hours, you pay nothing.</p>
             
             <div className="flex flex-col sm:flex-row gap-2 pt-4">
               <div className="flex items-center gap-2 font-medium text-gray-300 text-[16px]">
