@@ -44,10 +44,12 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <p className="text-xs text-gray-500 pt-4">
-              © {new Date().getFullYear()} Rush Inspector. All rights reserved.
-            </p>
           </div>
+        </div>
+        <div className="mt-8 text-right">
+          <p className="text-xs text-gray-500">
+            © {new Date().getFullYear()} Rush Inspector. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
