@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { format } from "date-fns";
+import { CalendarIcon, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -23,6 +26,9 @@ import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useMutation } from "@tanstack/react-query";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Calendar } from "@/components/ui/calendar";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   fullName: z.string().min(2, "required"),
@@ -38,8 +44,17 @@ const formSchema = z.object({
 
 type FormData = z.infer<typeof formSchema>;
 
+const timeSlots = [
+  "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM",
+  "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM",
+  "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM",
+  "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM"
+];
+
 export default function ConciergeForm() {
   const { toast } = useToast();
+  const [datePickerOpen, setDatePickerOpen] = useState(false);
+  const [selectedDate, setSelectedDate] = useState<Date | undefined>(undefined);
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -212,17 +227,67 @@ export default function ConciergeForm() {
                   control={form.control}
                   name="inspectionDate"
                   render={({ field }) => (
-                    <FormItem>
+                    <FormItem className="flex flex-col">
                       <FormLabel>Inspection Date</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="date" 
-                          placeholder=""
-                          {...field} 
-                          className="bg-white"
-                          data-testid="input-inspection-date"
-                        />
-                      </FormControl>
+                      <Popover open={datePickerOpen} onOpenChange={setDatePickerOpen}>
+                        <PopoverTrigger asChild>
+                          <FormControl>
+                            <Button
+                              variant="outline"
+                              className={cn(
+                                "w-full pl-3 text-left font-normal bg-white",
+                                !field.value && "text-muted-foreground"
+                              )}
+                              data-testid="button-inspection-date"
+                            >
+                              {field.value ? (
+                                format(new Date(field.value), "PPP")
+                              ) : (
+                                <span>Pick a date</span>
+                              )}
+                              <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                            </Button>
+                          </FormControl>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-auto p-0" align="start">
+                          <Calendar
+                            mode="single"
+                            selected={selectedDate}
+                            onSelect={(date) => {
+                              setSelectedDate(date);
+                            }}
+                            disabled={(date) =>
+                              date < new Date(new Date().setHours(0, 0, 0, 0))
+                            }
+                            initialFocus
+                          />
+                          <div className="p-3 border-t flex justify-end gap-2">
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => {
+                                setDatePickerOpen(false);
+                              }}
+                              data-testid="button-date-cancel"
+                            >
+                              Cancel
+                            </Button>
+                            <Button
+                              size="sm"
+                              onClick={() => {
+                                if (selectedDate) {
+                                  field.onChange(format(selectedDate, "yyyy-MM-dd"));
+                                }
+                                setDatePickerOpen(false);
+                              }}
+                              disabled={!selectedDate}
+                              data-testid="button-date-confirm"
+                            >
+                              Confirm
+                            </Button>
+                          </div>
+                        </PopoverContent>
+                      </Popover>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -233,14 +298,29 @@ export default function ConciergeForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Time of Inspection</FormLabel>
-                      <FormControl>
-                        <Input 
-                          type="time" 
-                          {...field} 
-                          className="bg-white cursor-pointer"
-                          data-testid="input-time-of-inspection"
-                        />
-                      </FormControl>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <FormControl>
+                          <SelectTrigger className="bg-white" data-testid="select-time-of-inspection">
+                            <SelectValue placeholder="Select time">
+                              {field.value ? (
+                                <span className="flex items-center gap-2">
+                                  <Clock className="h-4 w-4 opacity-50" />
+                                  {field.value}
+                                </span>
+                              ) : (
+                                "Select time"
+                              )}
+                            </SelectValue>
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          {timeSlots.map((time) => (
+                            <SelectItem key={time} value={time} data-testid={`select-time-${time.replace(/[: ]/g, '-')}`}>
+                              {time}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
                       <FormMessage />
                     </FormItem>
                   )}
