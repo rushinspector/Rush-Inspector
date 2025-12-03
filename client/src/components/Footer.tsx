@@ -17,27 +17,33 @@ export default function Footer() {
 
           {/* Contact & Legal */}
           <div className="text-sm">
-            <h4 className="text-sm font-bold mb-3">Contact</h4>
-            <ul className="space-y-2 text-gray-400 mb-6">
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-accent" />
-                <span>(513) 877-7874</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-accent" />
-                <span>concierge@rushinspections.com</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent" />
-                <span>Cincinnati, OH</span>
-              </li>
-            </ul>
+            <div className="flex gap-12">
+              <div>
+                <h4 className="text-sm font-bold mb-3">Contact</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li className="flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-accent" />
+                    <span>(513) 877-7874</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-accent" />
+                    <span>concierge@rushinspections.com</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-accent" />
+                    <span>Cincinnati, OH</span>
+                  </li>
+                </ul>
+              </div>
 
-            <h4 className="text-sm font-bold mb-3">Legal</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
-            </ul>
+              <div>
+                <h4 className="text-sm font-bold mb-3">Legal</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
+                  <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
+                </ul>
+              </div>
+            </div>
             <p className="text-xs text-gray-500 pt-4">
               © {new Date().getFullYear()} Rush Inspector. All rights reserved.
             </p>
