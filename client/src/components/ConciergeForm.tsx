@@ -32,7 +32,7 @@ const formSchema = z.object({
   sqFt: z.string().min(1, "Square footage is required"),
   inspectionDate: z.string().min(1, "Inspection date is required"),
   timeOfInspection: z.string().min(1, "Time of inspection is required"),
-  addOns: z.string().min(1, "Add-ons field is required"),
+  addOns: z.string().optional(),
   hearAboutUs: z.string().min(1, "Please tell us how you heard about us"),
 });
 
