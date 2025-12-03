@@ -217,6 +217,7 @@ export default function ConciergeForm() {
                       <FormControl>
                         <Input 
                           type="date" 
+                          placeholder=""
                           {...field} 
                           className="bg-white"
                           data-testid="input-inspection-date"
