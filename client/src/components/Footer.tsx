@@ -27,7 +27,7 @@ export default function Footer() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Mail className="w-4 h-4 text-accent" />
-                    <span>concierge@rushinspections.com</span>
+                    <span>cansanelli@rushinspector.com</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-accent" />
