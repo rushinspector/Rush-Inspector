@@ -25,13 +25,13 @@ import { motion } from "framer-motion";
 import { useMutation } from "@tanstack/react-query";
 
 const formSchema = z.object({
-  fullName: z.string().min(2, "Full name is required"),
-  companyName: z.string().min(2, "Company name is required"),
-  phoneNumber: z.string().min(10, "Valid phone number is required"),
-  inspectionAddress: z.string().min(5, "Inspection address is required"),
-  sqFt: z.string().min(1, "Square footage is required"),
-  inspectionDate: z.string().min(1, "Inspection date is required"),
-  timeOfInspection: z.string().min(1, "Time of inspection is required"),
+  fullName: z.string().min(2, "Required"),
+  companyName: z.string().min(2, "Required"),
+  phoneNumber: z.string().min(10, "Required"),
+  inspectionAddress: z.string().min(5, "Required"),
+  sqFt: z.string().min(1, "Required"),
+  inspectionDate: z.string().min(1, "Required"),
+  timeOfInspection: z.string().min(1, "Required"),
   addOns: z.string().optional(),
   hearAboutUs: z.string().min(1, "Please tell us how you heard about us"),
 });
