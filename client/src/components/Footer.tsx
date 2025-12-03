@@ -35,7 +35,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 text-[12px]">
               <h4 className="text-sm font-bold mb-3">Legal</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
