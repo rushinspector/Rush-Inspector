@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold text-white mb-4">
-              Rush Home <br/> <span className="text-accent">Inspection</span>
+              Rush <span className="text-accent">Inspector</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               The premier concierge inspection service for real estate professionals who demand speed and quality.
