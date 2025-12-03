@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: Clock,
-    title: "Rush Service Guaranteed",
+    title: "Priority Response",
     description: "We prioritize your request. Inspections scheduled within 24-48 hours and reports delivered same-day.",
   },
   {
