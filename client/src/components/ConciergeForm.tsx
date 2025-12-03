@@ -247,7 +247,7 @@ export default function ConciergeForm() {
                             </button>
                           </FormControl>
                         </PopoverTrigger>
-                        <PopoverContent className="w-[180px] p-2" align="start">
+                        <PopoverContent className="w-auto p-2" align="start">
                           <Calendar
                             mode="single"
                             selected={selectedDate}
@@ -262,19 +262,19 @@ export default function ConciergeForm() {
                               date < new Date(new Date().setHours(0, 0, 0, 0))
                             }
                             initialFocus
-                            className="text-[9px] [--cell-size:0.875rem] p-0"
+                            className="text-[10px] [--cell-size:1.25rem] p-0"
                             classNames={{
                               months: "flex flex-col",
-                              month: "flex w-full flex-col gap-0",
-                              nav: "flex items-center justify-between",
+                              month: "flex w-full flex-col gap-1",
+                              nav: "flex items-center justify-between mb-1",
                               button_previous: "h-5 w-5 p-0",
                               button_next: "h-5 w-5 p-0",
                               month_caption: "h-5 flex items-center justify-center",
-                              caption_label: "text-[10px] font-medium",
+                              caption_label: "text-[11px] font-medium",
                               weekdays: "flex",
-                              weekday: "text-[8px] w-[22px] text-center",
-                              week: "flex mt-0",
-                              day: "w-[22px] h-[22px] p-0",
+                              weekday: "text-[9px] w-5 text-center text-muted-foreground",
+                              week: "flex",
+                              day: "w-5 h-5 p-0 text-center",
                             }}
                           />
                         </PopoverContent>
