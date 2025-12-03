@@ -16,25 +16,25 @@ export default function Footer() {
           </div>
 
           {/* Contact & Legal */}
-          <div className="text-[12px]">
-            <h4 className="text-sm font-bold mb-3">Contact</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-accent" />
+          <div className="text-[10px]">
+            <h4 className="text-xs font-bold mb-1.5">Contact</h4>
+            <ul className="space-y-1 text-gray-400">
+              <li className="flex items-center gap-1.5">
+                <Phone className="w-3 h-3 text-accent" />
                 <span>(513) 877-7874</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-accent" />
+              <li className="flex items-center gap-1.5">
+                <Mail className="w-3 h-3 text-accent" />
                 <span>cansanelli@rushinspector.com</span>
               </li>
-              <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent" />
+              <li className="flex items-center gap-1.5">
+                <MapPin className="w-3 h-3 text-accent" />
                 <span>Cincinnati, OH</span>
               </li>
             </ul>
             
-            <h4 className="text-sm font-bold mb-3 mt-4">Legal</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className="text-xs font-bold mb-1.5 mt-2">Legal</h4>
+            <ul className="space-y-1 text-gray-400">
               <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
               <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
             </ul>
