@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Contact & Legal */}
+          {/* Contact */}
           <div className="text-[10px]">
             <h4 className="text-xs font-bold mb-1.5">Contact</h4>
             <ul className="space-y-1 text-gray-400">
@@ -32,8 +32,11 @@ export default function Footer() {
                 <span>Cincinnati, OH</span>
               </li>
             </ul>
-            
-            <h4 className="text-xs font-bold mb-1.5 mt-2">Legal</h4>
+          </div>
+
+          {/* Legal */}
+          <div className="text-[10px]">
+            <h4 className="text-xs font-bold mb-1.5">Legal</h4>
             <ul className="space-y-1 text-gray-400">
               <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
               <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
