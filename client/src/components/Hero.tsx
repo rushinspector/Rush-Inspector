@@ -32,9 +32,8 @@ export default function Hero() {
               <span className="text-accent">booked?</span>
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl leading-snug">
-              Inspector matched within 24 hours—no match, no charge.
-            </p>
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl leading-snug">Inspector matched within 24 hours—
+            no match, no charge.</p>
             
             <div className="space-y-2 pt-2">
               <p className="text-lg text-gray-200">
