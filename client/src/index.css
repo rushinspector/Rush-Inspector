@@ -248,11 +248,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /* Card title responsive sizing */
 .card-title-responsive {
-  font-size: 27px;
+  font-size: 29px !important;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 640px) {
   .card-title-responsive {
-    font-size: 29px;
+    font-size: 27px !important;
   }
 }
