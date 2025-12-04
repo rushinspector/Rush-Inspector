@@ -256,3 +256,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 27px !important;
   }
 }
+
+/* Hero title sizing */
+.hero-title {
+  font-size: 73px !important;
+}
