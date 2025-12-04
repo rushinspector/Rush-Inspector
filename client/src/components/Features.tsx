@@ -10,7 +10,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Peak Season Coverage",
-    description: "All inspectors in our network are required to hold current Ohio licenses and active insurance.",
+    description: "Everyone's booked? We maintain backup capacity when demand is high.",
   },
   {
     icon: UserCheck,
