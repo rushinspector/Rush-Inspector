@@ -1,4 +1,4 @@
-import { Clock, TrendingUp, Handshake } from "lucide-react";
+import { Clock, TrendingUp, BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
@@ -13,7 +13,7 @@ const features = [
     description: "When demand spikes and availability drops, we have backup inspectors ready.",
   },
   {
-    icon: Handshake,
+    icon: BadgeCheck,
     title: "Deal Protection",
     description: "Inspection contingency deadline approaching? We protect your deal from falling through.",
   },
