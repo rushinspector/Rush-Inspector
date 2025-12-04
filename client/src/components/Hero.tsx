@@ -28,7 +28,7 @@ export default function Hero() {
               All your inspectors <br/>
               <span className="text-accent">booked?</span>
             </h1>
-            <p className="md:text-xl text-gray-200 max-w-lg mt-[11px] mb-[11px] font-bold text-[33px]">Inspector matched within 24 hours—no match, no charge.</p>
+            <p className="text-gray-200 max-w-xl mt-[11px] mb-[11px] text-[28px] md:text-[32px] lg:text-[36px] leading-snug">Inspector matched within 24 hours—no match, no charge.</p>
             <p className="md:text-xl text-gray-200 text-[18px]">Serving Hamilton County & Greater Cincinnati</p>
             <div className="md:text-xl font-bold text-[#f8f8fa] mt-2 text-[17px]">$349 coordination fee — inspector paid directly</div>
             
