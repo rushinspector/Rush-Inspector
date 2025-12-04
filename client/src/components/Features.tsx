@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: ShieldCheck,
-    title: "Qualified Network",
+    title: "Peak Season Coverage",
     description: "All inspectors in our network are required to hold current Ohio licenses and active insurance.",
   },
   {
