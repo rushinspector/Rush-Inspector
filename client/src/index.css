@@ -245,3 +245,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   width: 2rem !important;
   height: 2rem !important;
 }
+
+/* Card title responsive sizing */
+.card-title-responsive {
+  font-size: 27px;
+}
+
+@media (min-width: 768px) {
+  .card-title-responsive {
+    font-size: 29px;
+  }
+}
