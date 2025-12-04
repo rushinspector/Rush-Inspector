@@ -51,13 +51,13 @@ export default function Hero() {
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                Fully Licensed & Insured
+                Real Support
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 basis-full">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                Real Support
+                Fully Licensed & Insured
               </div>
             </div>
           </motion.div>
