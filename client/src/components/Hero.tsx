@@ -33,8 +33,8 @@ export default function Hero() {
             </h1>
             
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl leading-snug">
-              Inspector matched within 24 hours—<br/>
-              no match, no charge.
+              Licensed Inspector booked within 24 hours—<br/>
+              pay only when confirmed.
             </p>
             
             <div className="space-y-2 pt-2">
