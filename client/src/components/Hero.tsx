@@ -24,7 +24,7 @@ export default function Hero() {
             className="text-white space-y-6"
           >
             <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium mb-2 backdrop-blur-sm text-[14px]">24-Hour Inspector Match Guarantee</div>
-            <h1 className="text-[32px] md:text-[48px] lg:text-[56px] font-display font-bold leading-[1.15]">
+            <h1 className="md:text-[48px] lg:text-[56px] font-display font-bold text-[69px]">
               All your inspectors <br/>
               <span className="text-accent">booked?</span>
             </h1>
