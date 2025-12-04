@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: Clock,
-    title: "Priority Response",
+    title: "Last-Minute Bookings",
     description: "We prioritize your request and notify inspectors immediately — you'll hear back fast.",
   },
   {
