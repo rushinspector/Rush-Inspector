@@ -28,7 +28,7 @@ export default function Hero() {
               <span className="text-accent">inspector?</span>
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl mt-10 lg:mt-28">
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl mt-4 lg:mt-6">
               <span className="md:whitespace-nowrap">Inspector booked within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
