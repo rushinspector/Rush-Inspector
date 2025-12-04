@@ -10,7 +10,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Peak Season Coverage",
-    description: "Everyone's booked? We maintain backup capacity when demand is high.",
+    description: "When demand spikes and availability drops, we have backup inspectors ready.",
   },
   {
     icon: UserCheck,
