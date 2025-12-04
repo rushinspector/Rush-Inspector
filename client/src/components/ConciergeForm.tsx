@@ -248,7 +248,7 @@ export default function ConciergeForm() {
                             </button>
                           </FormControl>
                         </PopoverTrigger>
-                        <PopoverContent className="w-auto p-2" align="start">
+                        <PopoverContent className="w-auto p-3 bg-white" align="start">
                           <Calendar
                             mode="single"
                             selected={selectedDate}
@@ -263,19 +263,25 @@ export default function ConciergeForm() {
                               date < new Date(new Date().setHours(0, 0, 0, 0))
                             }
                             initialFocus
-                            className="text-[10px] [--cell-size:1.25rem] p-0"
+                            className="bg-white text-foreground"
                             classNames={{
                               months: "flex flex-col",
-                              month: "flex w-full flex-col gap-1",
-                              nav: "flex items-center justify-between mb-1",
-                              button_previous: "h-5 w-5 p-0",
-                              button_next: "h-5 w-5 p-0",
-                              month_caption: "h-5 flex items-center justify-center",
-                              caption_label: "text-[11px] font-medium",
+                              month: "flex w-full flex-col gap-2",
+                              nav: "flex items-center justify-between mb-2",
+                              button_previous: "h-7 w-7 bg-transparent hover:bg-gray-100 rounded-md",
+                              button_next: "h-7 w-7 bg-transparent hover:bg-gray-100 rounded-md",
+                              month_caption: "h-7 flex items-center justify-center",
+                              caption_label: "text-sm font-semibold text-gray-900",
                               weekdays: "flex",
-                              weekday: "text-[9px] w-5 text-center text-muted-foreground",
-                              week: "flex",
-                              day: "w-5 h-5 p-0 text-center",
+                              weekday: "text-xs w-8 text-center text-gray-500 font-medium",
+                              week: "flex mt-1",
+                              day: "w-8 h-8 p-0 text-center",
+                              today: "bg-gray-100 text-gray-900 rounded-md",
+                              range_start: "bg-primary text-primary-foreground rounded-md",
+                              range_end: "bg-primary text-primary-foreground rounded-md",
+                              range_middle: "bg-gray-100",
+                              disabled: "text-gray-300 opacity-50",
+                              outside: "text-gray-400",
                             }}
                           />
                         </PopoverContent>
