@@ -1,4 +1,4 @@
-import { Clock, ShieldCheck, UserCheck } from "lucide-react";
+import { Clock, TrendingUp, UserCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
@@ -8,7 +8,7 @@ const features = [
     description: "Your regular inspectors are fully booked—we find you one within 24 hours.",
   },
   {
-    icon: ShieldCheck,
+    icon: TrendingUp,
     title: "Peak Season Coverage",
     description: "When demand spikes and availability drops, we have backup inspectors ready.",
   },
