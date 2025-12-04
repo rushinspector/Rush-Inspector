@@ -10,9 +10,7 @@ export default function Footer() {
             <h3 className="text-xl font-display font-bold text-white mb-2">
               Rush <span className="text-accent">Inspector</span>
             </h3>
-            <p className="text-gray-400 text-xs leading-relaxed max-w-xs">
-              The platform connecting real estate professionals with fast, high-quality home inspections.
-            </p>
+            <p className="text-gray-400 text-xs leading-relaxed max-w-xs">The platform connecting real estate professionals with fast, available home inspectors.</p>
           </div>
 
           {/* Contact */}
