@@ -24,7 +24,7 @@ export default function Features() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-4xl font-display font-bold text-primary mb-4">Why Agents Choose Us</h2>
+          <h2 className="text-4xl font-display font-bold text-primary mb-4">When You Need Us</h2>
           <p className="text-muted-foreground text-lg">
             We understand that in real estate, time is money. Our service is built to move as fast as you do.
           </p>
