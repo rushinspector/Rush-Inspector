@@ -5,7 +5,7 @@ const features = [
   {
     icon: Clock,
     title: "Last-Minute Bookings",
-    description: "Your regular inspectors are fully booked—we find you one within 24 hours.",
+    description: "Your regular inspectors are fully booked? We find you one within 24 hours.",
   },
   {
     icon: TrendingUp,
