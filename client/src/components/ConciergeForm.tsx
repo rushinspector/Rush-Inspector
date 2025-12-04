@@ -265,18 +265,9 @@ export default function ConciergeForm() {
                             initialFocus
                             className="bg-white text-foreground"
                             classNames={{
-                              months: "flex flex-col",
-                              month: "flex w-full flex-col gap-2",
-                              nav: "flex items-center justify-between mb-2",
-                              button_previous: "h-7 w-7 bg-transparent hover:bg-gray-100 rounded-md flex items-center justify-center",
-                              button_next: "h-7 w-7 bg-transparent hover:bg-gray-100 rounded-md flex items-center justify-center",
-                              month_caption: "h-7 flex items-center justify-center",
                               caption_label: "text-sm font-semibold text-gray-900",
-                              weekdays: "grid grid-cols-7",
-                              weekday: "text-xs h-8 w-8 flex items-center justify-center text-gray-500 font-medium",
-                              week: "grid grid-cols-7 mt-1",
-                              day: "h-8 w-8 p-0 flex items-center justify-center",
-                              day_button: "h-8 w-8 p-0 text-sm font-normal rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-1 inline-flex items-center justify-center cursor-pointer",
+                              weekday: "text-xs text-gray-500 font-medium",
+                              day_button: "text-sm font-normal rounded-md hover:bg-gray-100 focus:outline-none cursor-pointer",
                               selected: "bg-gray-900 text-white hover:bg-gray-900 hover:text-white",
                               today: "bg-gray-100 text-gray-900",
                               disabled: "text-gray-300 opacity-50 pointer-events-none",

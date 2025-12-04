@@ -3,6 +3,7 @@
 import * as React from "react"
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 import { DayPicker, getDefaultClassNames } from "react-day-picker"
+import "react-day-picker/style.css"
 
 import { cn } from "@/lib/utils"
 
@@ -31,12 +32,12 @@ function Calendar({
           "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1 inline-flex items-center justify-center rounded-md border border-input text-sm font-medium"
         ),
         month_grid: "w-full border-collapse",
-        weekdays: "flex",
-        weekday: "text-muted-foreground rounded-md w-8 font-normal text-[0.8rem] text-center",
-        week: "flex w-full mt-2",
-        day: "relative p-0 text-center text-sm focus-within:relative focus-within:z-20 h-8 w-8",
+        weekdays: "grid grid-cols-7",
+        weekday: "text-muted-foreground rounded-md font-normal text-[0.8rem] flex items-center justify-center",
+        week: "grid grid-cols-7 mt-2",
+        day: "relative p-0 text-center text-sm focus-within:relative focus-within:z-20 flex items-center justify-center",
         day_button: cn(
-          "inline-flex items-center justify-center rounded-md text-sm font-normal h-8 w-8 p-0 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+          "inline-flex items-center justify-center rounded-md text-sm font-normal p-0 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
         ),
         selected: "bg-gray-900 text-white hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white rounded-md",
         today: "bg-gray-100 text-gray-900 rounded-md",
