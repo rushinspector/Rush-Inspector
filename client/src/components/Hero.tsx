@@ -21,31 +21,44 @@ export default function Hero() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-white space-y-6"
+            className="text-white space-y-5"
           >
-            <div className="inline-block px-4 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium mb-2 backdrop-blur-sm text-[14px]">24-Hour Inspector Match Guarantee</div>
-            <h1 className="md:text-[48px] lg:text-[56px] font-display font-bold text-[69px] leading-[1.25]">
+            <div className="inline-block px-4 py-1.5 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium backdrop-blur-sm text-sm">
+              24-Hour Inspector Match Guarantee
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               All your inspectors <br/>
               <span className="text-accent">booked?</span>
             </h1>
-            <p className="text-gray-200 max-w-xl mt-[11px] mb-[11px] text-[28px] md:text-[32px] lg:text-[36px] leading-snug">Inspector matched within 24 hours—no match, no charge.</p>
-            <p className="md:text-xl text-gray-200 text-[18px]">Serving Hamilton County & Greater Cincinnati</p>
-            <div className="md:text-xl font-bold text-[#f8f8fa] mt-2 text-[17px]">$349 coordination fee — inspector paid directly</div>
             
-            <div className="flex flex-col sm:flex-row gap-2 pt-4">
-              <div className="flex items-center gap-2 font-medium text-gray-300 text-[16px]">
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl leading-snug">
+              Inspector matched within 24 hours—no match, no charge.
+            </p>
+            
+            <div className="space-y-2 pt-2">
+              <p className="text-lg text-gray-200">
+                Serving Hamilton County & Greater Cincinnati
+              </p>
+              <p className="text-lg font-semibold text-white">
+                $349 coordination fee — inspector paid directly
+              </p>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-4 text-sm text-gray-300">
+              <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 Quick Booking
               </div>
-              <div className="flex items-center gap-2 font-medium text-gray-300 text-[16px]">
+              <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 Fully Licensed & Insured
               </div>
-              <div className="flex items-center gap-2 font-medium text-gray-300 text-[16px]">
+              <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
