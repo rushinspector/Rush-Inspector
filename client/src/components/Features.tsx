@@ -15,7 +15,7 @@ const features = [
   {
     icon: BadgeCheck,
     title: "Deal Protection",
-    description: "Inspection contingency deadline approaching? We protect your deal from falling through.",
+    description: "Inspection deadline approaching? We keep your deal on track.",
   },
 ];
 
