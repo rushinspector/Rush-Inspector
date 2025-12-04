@@ -23,7 +23,7 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-white space-y-5"
           >
-            <h1 className="md:text-5xl lg:text-6xl font-display font-bold text-[70px]">
+            <h1 className="text-[70px] font-display font-bold">
               Can't find an <br/>
               <span className="text-accent">inspector?</span>
             </h1>
