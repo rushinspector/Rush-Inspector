@@ -24,8 +24,8 @@ export default function Hero() {
             className="text-white space-y-5"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight -mt-8">
-              All your inspectors <br/>
-              <span className="text-accent">booked?</span>
+              Can't find an <br/>
+              <span className="text-accent">inspector?</span>
             </h1>
             
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl mt-10 lg:mt-28">
