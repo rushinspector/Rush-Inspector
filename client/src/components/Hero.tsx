@@ -34,7 +34,7 @@ export default function Hero() {
             </p>
             
             <div className="space-y-2 pt-2">
-              <p className="text-lg text-gray-200 font-bold">
+              <p className="text-gray-200 font-bold text-[19px]">
                 Serving Hamilton County & Greater Cincinnati
               </p>
               <p className="text-white font-light text-[16px]">
