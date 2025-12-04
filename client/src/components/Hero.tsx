@@ -33,7 +33,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl leading-snug">
-              <span className="whitespace-nowrap">Licensed Inspector scheduled within 24</span><br/>
+              <span className="whitespace-nowrap">Licensed Inspector scheduled within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
             
