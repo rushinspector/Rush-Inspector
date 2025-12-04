@@ -14,7 +14,7 @@ const features = [
   },
   {
     icon: UserCheck,
-    title: "Agent Support",
+    title: "Deal Protection",
     description: "We communicate directly with you. No confusing scheduling. One form, and we handle the coordination.",
   },
 ];
