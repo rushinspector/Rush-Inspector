@@ -226,10 +226,22 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background-size: 16px 16px;
 }
 
-/* React Day Picker - Custom styling */
+/* React Day Picker - Override default sizing to fix click alignment */
 .rdp-root {
-  --rdp-accent-color: hsl(var(--primary));
-  --rdp-accent-background-color: hsl(var(--accent));
+  --rdp-day-height: 2rem;
+  --rdp-day-width: 2rem;
+  --rdp-day_button-height: 2rem;
+  --rdp-day_button-width: 2rem;
   --rdp-day_button-border-radius: 0.375rem;
   --rdp-day_button-border: none;
+}
+
+.rdp-day {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.rdp-day_button {
+  width: 2rem !important;
+  height: 2rem !important;
 }
