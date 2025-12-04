@@ -29,7 +29,7 @@ export default function Hero() {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               All your inspectors <br/>
-              <span className="text-accent">busy?</span>
+              <span className="text-accent">booked?</span>
             </h1>
             
             <p className="md:text-2xl lg:text-3xl text-gray-100 max-w-xl text-[29px]">
