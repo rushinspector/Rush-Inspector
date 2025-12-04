@@ -29,11 +29,11 @@ export default function Hero() {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               All your inspectors <br/>
-              <span className="text-accent">booked?</span>
+              <span className="text-accent">busy?</span>
             </h1>
             
             <p className="md:text-2xl lg:text-3xl text-gray-100 max-w-xl text-[29px]">
-              <span className="whitespace-nowrap">Licensed Inspector scheduled within 24 hours—</span><br/>
+              <span className="whitespace-nowrap">Licensed Inspector booked within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
             
