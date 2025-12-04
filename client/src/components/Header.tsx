@@ -21,6 +21,14 @@ export default function Header() {
             <span className="font-display font-bold text-primary tracking-tight text-[24px]">Rush Inspector</span>
           </div>
         </motion.div>
+        <a 
+          href="tel:5138777874" 
+          className="md:hidden flex items-center gap-1.5 text-primary underline underline-offset-2 text-[13px]"
+          data-testid="link-phone-mobile"
+        >
+          <Phone className="w-4 h-4" />
+          (513) 877-RUSH
+        </a>
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
