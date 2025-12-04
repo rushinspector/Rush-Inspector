@@ -47,7 +47,7 @@ export default function Hero() {
                 </svg>
                 Quick Booking
               </div>
-              <div className="flex items-center gap-2 text-[16px]">
+              <div className="flex items-center gap-2 text-[18px]">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
