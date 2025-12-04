@@ -261,3 +261,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .hero-title {
   font-size: 73px !important;
 }
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 60px !important;
+  }
+}
