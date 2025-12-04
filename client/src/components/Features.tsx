@@ -25,7 +25,7 @@ export default function Features() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-4xl font-display font-bold text-primary mb-4">When You Need Us</h2>
-          <p className="text-muted-foreground text-lg">We connect you with licensed inspectors when your usual contacts can’t help.</p>
+          <p className="text-muted-foreground text-lg">We connect you with a licensed inspector when your usual contacts can’t help.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
