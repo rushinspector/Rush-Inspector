@@ -5,7 +5,7 @@ const features = [
   {
     icon: Clock,
     title: "Last-Minute Bookings",
-    description: "We prioritize your request and notify inspectors immediately — you'll hear back fast.",
+    description: "Your regular inspectors are fully booked—we find you one within 24 hours.",
   },
   {
     icon: ShieldCheck,
