@@ -15,7 +15,7 @@ const features = [
   {
     icon: UserCheck,
     title: "Deal Protection",
-    description: "Inspection contingency deadline approaching? Don't let scheduling kill your commission.",
+    description: "Inspection contingency deadline looming? We protect your deal from falling through.",
   },
 ];
 
