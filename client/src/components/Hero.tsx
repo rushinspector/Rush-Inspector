@@ -23,17 +23,13 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-white space-y-5"
           >
-            <div className="inline-block px-4 py-1.5 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium backdrop-blur-sm text-sm">
-              24-Hour Inspector Match Guarantee
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               All your inspectors <br/>
               <span className="text-accent">booked?</span>
             </h1>
             
             <p className="md:text-2xl lg:text-3xl text-gray-100 max-w-xl text-[29px]">
-              <span className="whitespace-nowrap">Licensed Inspector within 24 hours—</span><br/>
+              <span className="whitespace-nowrap">Licensed inspector within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
             
