@@ -2,8 +2,14 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { format } from "date-fns";
+import { format, parseISO } from "date-fns";
 import { ChevronDown, Clock } from "lucide-react";
+
+// Helper function to parse date string as local date (avoids timezone issues)
+function parseLocalDate(dateString: string): Date {
+  const [year, month, day] = dateString.split('-').map(Number);
+  return new Date(year, month - 1, day);
+}
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -242,7 +248,7 @@ export default function ConciergeForm() {
                               data-testid="button-inspection-date"
                             >
                               <span className="line-clamp-1">
-                                {field.value ? format(new Date(field.value), "PPP") : "Select date"}
+                                {field.value ? format(parseLocalDate(field.value), "PPP") : "Select date"}
                               </span>
                               <ChevronDown className="h-4 w-4 opacity-50" />
                             </button>
@@ -253,10 +259,14 @@ export default function ConciergeForm() {
                             mode="single"
                             selected={selectedDate}
                             onSelect={(date) => {
-                              setSelectedDate(date);
                               if (date) {
-                                field.onChange(format(date, "yyyy-MM-dd"));
+                                // Create a local date to avoid timezone issues
+                                const localDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12, 0, 0);
+                                setSelectedDate(localDate);
+                                field.onChange(format(localDate, "yyyy-MM-dd"));
                                 setDatePickerOpen(false);
+                              } else {
+                                setSelectedDate(undefined);
                               }
                             }}
                             disabled={(date) =>
