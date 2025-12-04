@@ -28,17 +28,17 @@ export default function Hero() {
               <span className="text-accent">booked?</span>
             </h1>
             
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl mt-6 lg:mt-20">
+              <span className="md:whitespace-nowrap">Licensed inspector within 24 hours—</span><br/>
+              pay only when confirmed.
+            </p>
+            
             <div className="space-y-2 pt-2">
               <p className="text-gray-200 font-semibold text-lg md:text-xl lg:text-[23px]">
                 Serving Hamilton County & Greater Cincinnati
               </p>
               <p className="text-white font-light text-base md:text-[18px]">$349 coordination fee (inspector paid directly)</p>
             </div>
-            
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 max-w-xl mt-6 lg:mt-20">
-              <span className="md:whitespace-nowrap">Licensed inspector within 24 hours—</span><br/>
-              pay only when confirmed.
-            </p>
             
             <div className="flex flex-wrap items-center gap-x-4 md:gap-x-6 gap-y-2 pt-4 lg:pt-8 text-sm text-gray-300">
               <div className="flex items-center gap-2 basis-full">
