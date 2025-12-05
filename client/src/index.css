@@ -264,7 +264,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 767px) {
   .hero-title {
-    font-size: 57px !important;
+    font-size: 54px !important;
   }
 }
 
