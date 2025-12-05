@@ -385,6 +385,9 @@ export default function ConciergeForm() {
                   </>
                 )}
               </Button>
+              <p className="lg:hidden text-[8px] text-gray-400 text-center mt-0.5">
+                We'll text you within 30 minutes
+              </p>
               <p className="hidden lg:block text-xs text-gray-400 text-center mt-1">
                 By submitting, you agree to our{" "}
                 <a href="/terms" className="underline hover:text-gray-600" data-testid="link-terms">Terms of Service</a>
