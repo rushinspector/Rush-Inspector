@@ -30,6 +30,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { useMutation } from "@tanstack/react-query";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -125,9 +126,14 @@ export default function ConciergeForm() {
       <Card className="w-full max-w-sm md:max-w-2xl mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm">
         <CardHeader className="p-2 md:p-6 pt-1 md:pt-6">
           <CardTitle className="text-lg md:text-2xl">Book a Home Inspection</CardTitle>
-          <CardDescription className="text-xs md:text-sm">
-            Fill out the details below - we'll text you within 30 minutes.
-          </CardDescription>
+          <>
+            <CardDescription className="hidden md:block text-xs md:text-sm">
+              Fill out the details below - we'll text you within 30 minutes.
+            </CardDescription>
+            <Badge variant="outline" className="md:hidden text-xs w-fit">
+              30 minute response time
+            </Badge>
+          </>
         </CardHeader>
         <CardContent className="p-2 md:p-6 md:pt-0">
           <Form {...form}>
