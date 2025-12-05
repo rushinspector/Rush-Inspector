@@ -343,7 +343,7 @@ export default function ConciergeForm() {
                     <FormControl>
                       <Textarea 
                         placeholder="Radon testing, mold inspection, etc." 
-                        className="resize-none bg-white text-[13px] md:text-sm placeholder:text-[13px] md:placeholder:text-sm h-16 md:h-28" 
+                        className="resize-none bg-white text-[13px] md:text-sm placeholder:text-[13px] md:placeholder:text-sm h-9 md:h-28" 
                         {...field}
                         data-testid="textarea-add-ons"
                       />
