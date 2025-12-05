@@ -379,7 +379,7 @@ export default function ConciergeForm() {
               >
                 {mutation.isPending ? "Submitting..." : "Submit Request"}
               </Button>
-              <p className="disclaimer-text lg:hidden text-[10.9px] text-gray-400 text-center mt-2">
+              <p className="disclaimer-text lg:hidden text-[9px] text-gray-400 text-center mt-1">
                 We match licensed & insured professionals; verify independently.
               </p>
               <p className="text-xs text-gray-400 text-center mt-1">
