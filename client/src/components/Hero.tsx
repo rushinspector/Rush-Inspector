@@ -63,7 +63,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Right Column: Form */}
-          <div className="lg:pl-12 -mt-8 lg:mt-0">
+          <div className="lg:pl-12 -mt-14 lg:mt-0">
             <div className="disclaimer-text hidden lg:block text-xl lg:text-sm text-gray-400 max-w-2xl ml-2 lg:ml-5 mr-0 mb-1"> We match licensed & insured professionals; verify independently.</div>
             <ConciergeForm />
           </div>
