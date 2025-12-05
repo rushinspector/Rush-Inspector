@@ -40,7 +40,7 @@ export default function Hero() {
               <p className="text-white font-light mt-6" style={{ fontSize: '20px' }}>$349 coordination fee (inspector paid directly)</p>
             </div>
             
-            <div className="flex flex-wrap items-center justify-start gap-x-6 md:gap-x-8 gap-y-2 pt-6 lg:pt-8 text-sm text-gray-300">
+            <div className="hidden md:flex flex-wrap items-center justify-start gap-x-6 md:gap-x-8 gap-y-2 pt-6 lg:pt-8 text-sm text-gray-300">
               <div className="flex items-center gap-2 text-[18px]">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
