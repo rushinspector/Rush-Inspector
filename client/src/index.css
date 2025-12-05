@@ -267,3 +267,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 60px !important;
   }
 }
+
+/* Disclaimer text sizing */
+.disclaimer-text {
+  font-size: 11px;
+}
+
+@media (max-width: 767px) {
+  .disclaimer-text {
+    font-size: 9px;
+  }
+}
