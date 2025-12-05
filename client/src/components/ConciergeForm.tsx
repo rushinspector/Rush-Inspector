@@ -123,16 +123,16 @@ export default function ConciergeForm() {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <Card className="w-full max-w-2xl mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm">
-        <CardHeader className="pt-2 md:pt-6">
+        <CardHeader className="p-3 md:p-6 pt-2 md:pt-6">
           <CardTitle>Book a Home Inspection</CardTitle>
           <CardDescription>
             Fill out the details below - we'll text you within 30 minutes.
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-3 md:p-6 md:pt-0">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3 md:space-y-4">
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
                 <FormField
                   control={form.control}
                   name="fullName"
@@ -171,7 +171,7 @@ export default function ConciergeForm() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
                 <FormField
                   control={form.control}
                   name="phoneNumber"
@@ -229,7 +229,7 @@ export default function ConciergeForm() {
                 )}
               />
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
                 <FormField
                   control={form.control}
                   name="inspectionDate"
@@ -373,7 +373,7 @@ export default function ConciergeForm() {
 
               <Button 
                 type="submit" 
-                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-lg h-12 shadow-md transition-all hover:scale-[1.02]"
+                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-sm md:text-lg h-10 md:h-12 shadow-md transition-all hover:scale-[1.02]"
                 disabled={mutation.isPending}
                 data-testid="button-submit-request"
               >
