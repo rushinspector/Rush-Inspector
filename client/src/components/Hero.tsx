@@ -34,7 +34,7 @@ export default function Hero() {
             </p>
             
             <div className="space-y-2 pt-2">
-              <p className="text-gray-200 font-semibold text-[16px] md:text-xl lg:text-[23px]">
+              <p className="text-gray-200 font-semibold text-[16px] md:text-xl lg:text-[23px] -mt-2 md:mt-0">
                 Serving Hamilton County & Greater Cincinnati
               </p>
               <p className="text-white font-light mt-6 text-[17px] md:text-[20px]">$349 coordination fee (inspector paid directly)</p>
