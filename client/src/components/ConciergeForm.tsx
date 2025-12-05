@@ -130,9 +130,9 @@ export default function ConciergeForm() {
             <CardDescription className="hidden md:block text-xs md:text-sm">
               Fill out the details below - we'll text you within 30 minutes.
             </CardDescription>
-            <Badge variant="outline" className="md:hidden text-[10px] w-fit">
+            <p className="md:hidden text-[10px] text-muted-foreground">
               30 minute response time
-            </Badge>
+            </p>
           </>
         </CardHeader>
         <CardContent className="p-2 md:p-6 md:pt-0">
