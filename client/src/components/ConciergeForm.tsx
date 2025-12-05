@@ -390,9 +390,6 @@ export default function ConciergeForm() {
                   </>
                 )}
               </Button>
-              <p className="disclaimer-text lg:hidden text-[9px] text-gray-400 text-center mt-1">
-                Licensed & insured professionals; verify independently.
-              </p>
               <p className="text-xs text-gray-400 text-center mt-1">
                 By submitting, you agree to our{" "}
                 <a href="/terms" className="underline hover:text-gray-600" data-testid="link-terms">Terms of Service</a>
