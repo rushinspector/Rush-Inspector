@@ -144,7 +144,7 @@ export default function ConciergeForm() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-base">Full Name</FormLabel>
+                      <FormLabel className="text-xs md:text-[15.5px]">Full Name</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -162,7 +162,7 @@ export default function ConciergeForm() {
                   name="companyName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-base">Agency / Brokerage</FormLabel>
+                      <FormLabel className="text-xs md:text-[15.5px]">Agency / Brokerage</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -183,7 +183,7 @@ export default function ConciergeForm() {
                   name="phoneNumber"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-base">Phone Number</FormLabel>
+                      <FormLabel className="text-xs md:text-[15.5px]">Phone Number</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -201,7 +201,7 @@ export default function ConciergeForm() {
                   name="sqFt"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-base">Sq. Ft.</FormLabel>
+                      <FormLabel className="text-xs md:text-[15.5px]">Sq. Ft.</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -221,7 +221,7 @@ export default function ConciergeForm() {
                 name="inspectionAddress"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-xs md:text-base">Inspection Address</FormLabel>
+                    <FormLabel className="text-xs md:text-[15.5px]">Inspection Address</FormLabel>
                     <FormControl>
                       <Input 
                         placeholder="" 
@@ -310,7 +310,7 @@ export default function ConciergeForm() {
                   name="timeOfInspection"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-base">Time of Inspection</FormLabel>
+                      <FormLabel className="text-xs md:text-[15.5px]">Time of Inspection</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="bg-white" data-testid="select-time-of-inspection">
@@ -345,7 +345,7 @@ export default function ConciergeForm() {
                 name="addOns"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-xs md:text-base">Add-ons</FormLabel>
+                    <FormLabel className="text-xs md:text-[15.5px]">Add-ons</FormLabel>
                     <FormControl>
                       <Textarea 
                         placeholder="Radon testing, mold inspection, etc." 
@@ -364,7 +364,7 @@ export default function ConciergeForm() {
                 name="hearAboutUs"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-xs md:text-base">How did you hear about us?</FormLabel>
+                    <FormLabel className="text-xs md:text-[15.5px]">How did you hear about us?</FormLabel>
                     <FormControl>
                       <Input 
                         {...field} 
