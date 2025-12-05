@@ -241,7 +241,7 @@ export default function ConciergeForm() {
                   name="inspectionDate"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-base">Inspection Date</FormLabel>
+                      <FormLabel className="text-xs md:text-[15.5px]">Inspection Date</FormLabel>
                       <Popover open={datePickerOpen} onOpenChange={setDatePickerOpen}>
                         <PopoverTrigger asChild>
                           <FormControl>
