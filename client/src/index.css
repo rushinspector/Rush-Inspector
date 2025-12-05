@@ -253,7 +253,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 640px) {
   .card-title-responsive {
-    font-size: 27px !important;
+    font-size: 24.5px !important;
   }
 }
 
