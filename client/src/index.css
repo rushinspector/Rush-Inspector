@@ -275,6 +275,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 767px) {
   .disclaimer-text {
-    font-size: 11px;
+    font-size: 10.75px;
   }
 }
