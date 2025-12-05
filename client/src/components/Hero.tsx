@@ -66,28 +66,6 @@ export default function Hero() {
           <div className="lg:pl-12 -mt-10 lg:mt-0">
             <div className="disclaimer-text hidden lg:block text-xl lg:text-sm text-gray-400 max-w-2xl ml-2 lg:ml-5 mr-0 mb-1"> We match licensed & insured professionals; verify independently.</div>
             <ConciergeForm />
-            
-            {/* Mobile checkmarks - below form */}
-            <div className="flex md:hidden flex-wrap items-center justify-center gap-x-4 gap-y-2 pt-4 text-sm text-gray-300">
-              <div className="flex items-center gap-2 text-[14px]">
-                <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                Quick Booking
-              </div>
-              <div className="flex items-center gap-2 text-[14px]">
-                <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                Fully Licensed & Insured
-              </div>
-              <div className="flex items-center gap-2 text-[14px]">
-                <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                Real Support
-              </div>
-            </div>
           </div>
         </div>
       </div>
