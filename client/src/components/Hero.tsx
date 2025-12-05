@@ -67,6 +67,9 @@ export default function Hero() {
             <div className="disclaimer-text hidden lg:block text-xl lg:text-sm text-gray-400 max-w-2xl ml-2 lg:ml-5 mr-0 mb-1"> We match licensed & insured professionals; verify independently.</div>
             <ConciergeForm />
             <p className="lg:hidden text-[10px] text-gray-300 text-center mt-3">
+              By submitting, you agree to our <a href="/terms" className="underline">Terms of Service</a> and <a href="/privacy" className="underline">Privacy</a>
+            </p>
+            <p className="lg:hidden text-[10px] text-gray-300 text-center mt-1">
               Licensed & insured professionals; verify independently.
             </p>
           </div>
