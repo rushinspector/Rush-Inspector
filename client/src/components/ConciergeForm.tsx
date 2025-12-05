@@ -144,7 +144,7 @@ export default function ConciergeForm() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-[15px]">Full Name</FormLabel>
+                      <FormLabel className="text-xs md:text-[14px]">Full Name</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -162,7 +162,7 @@ export default function ConciergeForm() {
                   name="companyName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-[15px]">Agency / Brokerage</FormLabel>
+                      <FormLabel className="text-xs md:text-[14px]">Agency / Brokerage</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -183,7 +183,7 @@ export default function ConciergeForm() {
                   name="phoneNumber"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-[15px]">Phone Number</FormLabel>
+                      <FormLabel className="text-xs md:text-[14px]">Phone Number</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -201,7 +201,7 @@ export default function ConciergeForm() {
                   name="sqFt"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-[15px]">Sq. Ft.</FormLabel>
+                      <FormLabel className="text-xs md:text-[14px]">Sq. Ft.</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -221,7 +221,7 @@ export default function ConciergeForm() {
                 name="inspectionAddress"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-xs md:text-[15px]">Inspection Address</FormLabel>
+                    <FormLabel className="text-xs md:text-[14px]">Inspection Address</FormLabel>
                     <FormControl>
                       <Input 
                         placeholder="" 
@@ -241,7 +241,7 @@ export default function ConciergeForm() {
                   name="inspectionDate"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-[15px]">Inspection Date</FormLabel>
+                      <FormLabel className="text-xs md:text-[14px]">Inspection Date</FormLabel>
                       <Popover open={datePickerOpen} onOpenChange={setDatePickerOpen}>
                         <PopoverTrigger asChild>
                           <FormControl>
@@ -310,7 +310,7 @@ export default function ConciergeForm() {
                   name="timeOfInspection"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-xs md:text-[15px]">Time of Inspection</FormLabel>
+                      <FormLabel className="text-xs md:text-[14px]">Time of Inspection</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="bg-white" data-testid="select-time-of-inspection">
@@ -345,7 +345,7 @@ export default function ConciergeForm() {
                 name="addOns"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-xs md:text-[15px]">Add-ons</FormLabel>
+                    <FormLabel className="text-xs md:text-[14px]">Add-ons</FormLabel>
                     <FormControl>
                       <Textarea 
                         placeholder="Radon testing, mold inspection, etc." 
@@ -364,7 +364,7 @@ export default function ConciergeForm() {
                 name="hearAboutUs"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-xs md:text-[15px]">How did you hear about us?</FormLabel>
+                    <FormLabel className="text-xs md:text-[14px]">How did you hear about us?</FormLabel>
                     <FormControl>
                       <Input 
                         {...field} 
