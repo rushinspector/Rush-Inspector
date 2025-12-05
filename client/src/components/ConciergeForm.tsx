@@ -124,9 +124,9 @@ export default function ConciergeForm() {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <Card className="w-full max-w-sm md:max-w-2xl mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm">
-        <CardHeader className="p-2 md:p-6 pt-1 md:pt-6">
-          <CardTitle className="hidden md:block text-lg md:text-2xl">Book a Home Inspection</CardTitle>
-          <CardDescription className="hidden md:block text-xs md:text-sm">
+        <CardHeader className="hidden md:flex p-2 md:p-6 pt-1 md:pt-6">
+          <CardTitle className="text-lg md:text-2xl">Book a Home Inspection</CardTitle>
+          <CardDescription className="text-xs md:text-sm">
             Fill out the details below - we'll text you within 30 minutes.
           </CardDescription>
         </CardHeader>
