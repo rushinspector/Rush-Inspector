@@ -377,7 +377,12 @@ export default function ConciergeForm() {
                 disabled={mutation.isPending}
                 data-testid="button-submit-request"
               >
-                {mutation.isPending ? "Submitting..." : "Submit Request"}
+                {mutation.isPending ? "Submitting..." : (
+                  <>
+                    <span className="hidden md:inline">Submit Request</span>
+                    <span className="md:hidden">Submit</span>
+                  </>
+                )}
               </Button>
               <p className="disclaimer-text lg:hidden text-[9px] text-gray-400 text-center mt-1">
                 Licensed & insured professionals; verify independently.
