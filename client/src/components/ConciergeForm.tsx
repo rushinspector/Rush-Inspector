@@ -130,10 +130,10 @@ export default function ConciergeForm() {
             Fill out the details below - we'll text you within 30 minutes.
           </CardDescription>
         </CardHeader>
-        <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0">
+        <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0 mobile-compact-form">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2 md:space-y-4">
-              <div className="grid grid-cols-2 gap-2 md:gap-4">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1.5 md:space-y-4 form-spacing">
+              <div className="grid grid-cols-2 gap-1.5 md:gap-4 grid-spacing">
                 <FormField
                   control={form.control}
                   name="fullName"
@@ -172,7 +172,7 @@ export default function ConciergeForm() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-2 md:gap-4">
+              <div className="grid grid-cols-2 gap-1.5 md:gap-4 grid-spacing">
                 <FormField
                   control={form.control}
                   name="phoneNumber"
@@ -230,7 +230,7 @@ export default function ConciergeForm() {
                 )}
               />
 
-              <div className="grid grid-cols-2 gap-2 md:gap-4">
+              <div className="grid grid-cols-2 gap-1.5 md:gap-4 grid-spacing">
                 <FormField
                   control={form.control}
                   name="inspectionDate"
@@ -243,7 +243,7 @@ export default function ConciergeForm() {
                             <button
                               type="button"
                               className={cn(
-                                "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-white px-3 py-2 text-sm shadow-sm ring-offset-background focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50",
+                                "select-trigger-compact flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-white px-3 py-2 text-sm shadow-sm ring-offset-background focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50",
                                 !field.value && "text-muted-foreground"
                               )}
                               data-testid="button-inspection-date"
@@ -308,7 +308,7 @@ export default function ConciergeForm() {
                       <FormLabel className="text-xs md:text-[14px]">Time of Inspection</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger className="bg-white" data-testid="select-time-of-inspection">
+                          <SelectTrigger className="bg-white select-trigger-compact" data-testid="select-time-of-inspection">
                             <SelectValue placeholder="Select time">
                               {field.value ? (
                                 <span className="flex items-center gap-2">
@@ -374,7 +374,7 @@ export default function ConciergeForm() {
 
               <Button 
                 type="submit" 
-                className="w-auto md:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[16px] md:text-lg h-10 md:h-12 shadow-md transition-all hover:scale-[1.02] px-28 md:px-4"
+                className="w-auto md:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[14px] md:text-lg h-9 md:h-12 shadow-md transition-all hover:scale-[1.02] px-24 md:px-4"
                 disabled={mutation.isPending}
                 data-testid="button-submit-request"
               >

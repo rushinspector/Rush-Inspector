@@ -283,3 +283,32 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .submit-mobile-label {
   font-size: 19px !important;
 }
+
+/* Mobile form compact styling */
+@media (max-width: 767px) {
+  .mobile-compact-form input,
+  .mobile-compact-form .select-trigger-compact {
+    height: 32px !important;
+    min-height: 32px !important;
+    font-size: 13px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+  
+  .mobile-compact-form textarea {
+    font-size: 12px !important;
+    min-height: 32px !important;
+  }
+  
+  .mobile-compact-form label {
+    font-size: 10px !important;
+  }
+  
+  .mobile-compact-form .form-spacing {
+    gap: 6px !important;
+  }
+  
+  .mobile-compact-form .grid-spacing {
+    gap: 6px !important;
+  }
+}
