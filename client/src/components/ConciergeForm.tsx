@@ -127,7 +127,7 @@ export default function ConciergeForm() {
         <CardHeader className="hidden md:flex p-2 md:p-6 pt-1 md:pt-6">
           <CardTitle className="text-lg md:text-2xl">
             <span className="inline md:hidden">Book an Inspector</span>
-            <span className="hidden md:inline">Book a rush inspection.</span>
+            <span className="hidden md:inline">Book a Rush Home Inspection Now</span>
           </CardTitle>
           <CardDescription className="text-xs md:text-sm">
             Fill out the details below - we'll text you within 30 minutes.
