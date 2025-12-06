@@ -129,7 +129,7 @@ export default function ConciergeForm() {
             <span className="inline md:hidden">Book an Inspector</span>
             <span className="hidden md:inline">Book a Rush Home Inspection</span>
           </CardTitle>
-          <CardDescription className="text-xs md:text-sm -mt-4 md:-mt-5 md:ml-2">
+          <CardDescription className="text-xs md:text-sm -mt-4 md:-translate-y-2 md:ml-2">
             Fill out the details below – we'll text you within 30 minutes.
           </CardDescription>
         </CardHeader>
