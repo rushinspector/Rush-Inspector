@@ -367,7 +367,16 @@ export default function ConciergeForm() {
                         data-testid="input-hear-about-us"
                       />
                     </FormControl>
-                    <FormMessage />
+                    {form.formState.errors.hearAboutUs && (
+                      <>
+                        <p className="hidden md:block text-[0.65rem] font-medium text-destructive">
+                          Please tell us how you heard about us
+                        </p>
+                        <p className="md:hidden text-[0.65rem] font-medium text-destructive">
+                          Please tell us how you heard about us. Thank you!
+                        </p>
+                      </>
+                    )}
                   </FormItem>
                 )}
               />
