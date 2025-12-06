@@ -130,7 +130,7 @@ export default function ConciergeForm() {
             <span className="hidden md:inline">Book a Rush Home Inspection</span>
           </CardTitle>
           <CardDescription className="text-xs md:text-sm">
-            We'll text you within 30 minutes. Earliest inspection time is 24 hours after request.
+            Earliest inspection time is 24 hours after request.
           </CardDescription>
         </CardHeader>
         <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0 mobile-compact-form">
