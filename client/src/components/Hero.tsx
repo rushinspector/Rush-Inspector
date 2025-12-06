@@ -29,7 +29,8 @@ export default function Hero() {
             </h1>
             
             <p className="text-[20.9px] md:text-2xl lg:text-[32px] text-gray-100 max-w-xl mt-6 md:mt-10 lg:mt-18 font-medium">
-              <span className="md:whitespace-nowrap">Inspector booked within 24 hours—</span><br/>
+              <span className="md:hidden">Home inspector booked within 24 hours—</span>
+              <span className="hidden md:inline md:whitespace-nowrap">Inspector booked within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
             
