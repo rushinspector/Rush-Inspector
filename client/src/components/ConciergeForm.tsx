@@ -374,7 +374,7 @@ export default function ConciergeForm() {
 
               <Button 
                 type="submit" 
-                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-sm md:text-lg h-10 md:h-12 shadow-md transition-all hover:scale-[1.02]"
+                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-[13px] md:text-lg h-10 md:h-12 shadow-md transition-all hover:scale-[1.02]"
                 disabled={mutation.isPending}
                 data-testid="button-submit-request"
               >
