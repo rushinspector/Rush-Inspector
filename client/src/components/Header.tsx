@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-2 flex items-start md:items-center justify-between gap-2">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -23,7 +23,7 @@ export default function Header() {
         </motion.div>
         <a 
           href="tel:5138777874" 
-          className="md:hidden flex items-center gap-1.5 text-primary underline underline-offset-2 text-[12px]"
+          className="md:hidden flex items-center gap-1.5 text-primary underline underline-offset-2 text-[12px] mt-2"
           data-testid="link-phone-mobile"
         >
           <Phone className="w-4 h-4" />
