@@ -284,6 +284,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-size: 19px !important;
 }
 
+/* Form subtitle sizing */
+.form-subtitle {
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .form-subtitle {
+    font-size: 12px;
+  }
+}
+
 /* Mobile form compact styling */
 @media (max-width: 767px) {
   .mobile-compact-form input,
