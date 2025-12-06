@@ -54,7 +54,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cn(
-          "flex md:inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-9 px-20 md:px-4 py-1 md:py-2 w-auto md:w-full mx-auto md:mx-0 bg-accent hover:bg-accent/90 text-white font-semibold h-9 md:h-12 shadow-md transition-all hover:scale-[1.02] text-[21px] md:text-[20px]",
+          "flex md:inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-9 px-20 md:px-4 py-1 md:py-2 w-auto md:w-full mx-auto md:mx-0 bg-accent hover:bg-accent/90 text-white font-semibold h-9 md:h-12 shadow-md transition-all hover:scale-[1.02]",
           className
         )}
         ref={ref}
