@@ -405,7 +405,7 @@ export default function ConciergeForm() {
                   </>
                 )}
               </Button>
-              <div className="hidden lg:block space-y-0.5 mt-1">
+              <div className="hidden lg:block space-y-1 mt-1">
                 <p className="text-[13px] text-gray-400 text-center">
                   By submitting, you agree to our{" "}
                   <a href="/terms" className="underline hover:text-gray-600" data-testid="link-terms">Terms of Service</a>
