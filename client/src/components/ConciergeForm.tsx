@@ -125,7 +125,10 @@ export default function ConciergeForm() {
     >
       <Card className="w-full max-w-sm md:max-w-2xl -ml-2 md:mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm scale-95 md:scale-100 origin-top">
         <CardHeader className="hidden md:flex p-2 md:p-6 pt-1 md:pt-6">
-          <CardTitle className="text-lg md:text-2xl">Book an Inspector</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            <span className="inline md:hidden">Book an Inspector</span>
+            <span className="hidden md:inline">Book Rush Home Inspection</span>
+          </CardTitle>
           <CardDescription className="text-xs md:text-sm">
             Fill out the details below - we'll text you within 30 minutes.
           </CardDescription>
