@@ -30,7 +30,7 @@ export default function Hero() {
             
             {/* Mobile version */}
             <div className="md:hidden space-y-1.5 text-left -mt-2">
-              <p className="text-[17px] text-white font-semibold leading-snug">
+              <p className="text-[20px] text-white font-semibold leading-snug">
                 Inspector confirmed within 24 hours
               </p>
               <p className="text-[14px] text-gray-100 font-normal">
