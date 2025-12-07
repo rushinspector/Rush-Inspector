@@ -28,7 +28,7 @@ export default function Hero() {
               <span className="text-accent">inspector?</span>
             </h1>
             
-            <p className="text-[17.2px] md:text-2xl lg:text-[32.5px] hero-subtitle text-gray-100 max-w-xl mt-6 md:mt-10 lg:mt-12 font-bold md:font-medium leading-tight">
+            <p className="text-[17px] md:text-2xl lg:text-[32.5px] hero-subtitle text-gray-100 max-w-xl mt-6 md:mt-10 lg:mt-12 font-bold md:font-medium leading-tight">
               <span className="md:hidden">Home inspector booked within 24 hours—</span>
               <span className="hidden md:inline md:whitespace-nowrap">Home inspector booked within 24 hours—</span><br/>
               pay only when confirmed.
