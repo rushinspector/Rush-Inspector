@@ -396,7 +396,7 @@ export default function ConciergeForm() {
                   </>
                 )}
               </Button>
-              <p className="lg:hidden text-[11px] text-gray-500 text-center mt-2">
+              <p className="lg:hidden text-[10.5px] text-gray-500 text-center mt-2">
                 By submitting, you agree to our <a href="/terms" className="underline">Terms of Service</a> and <a href="/privacy" className="underline">Privacy Policy</a>.
               </p>
               <p className="lg:hidden text-[10px] text-gray-500 text-center -mt-2">
