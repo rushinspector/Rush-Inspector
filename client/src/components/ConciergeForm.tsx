@@ -124,7 +124,7 @@ export default function ConciergeForm() {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <Card className="w-full max-w-[450px] md:max-w-2xl md:mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm scale-100 md:scale-100 origin-top">
-        <div className="hidden md:block p-6 pt-2 pb-6">
+        <div className="hidden md:block p-6 pt-2 pb-3">
           <CardTitle className="text-lg mb-0 pb-1">
             <span className="hidden md:inline text-[23.5px]">Book a Rush Home Inspection</span>
           </CardTitle>
