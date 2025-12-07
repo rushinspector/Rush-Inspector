@@ -385,7 +385,7 @@ export default function ConciergeForm() {
 
               <Button 
                 type="submit" 
-                className="w-full md:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[14px] md:text-lg h-10 md:h-12 shadow-md transition-all hover:scale-[1.02] px-4 mb-8 md:mb-0"
+                className="w-full md:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[14px] md:text-lg h-10 md:h-12 shadow-md transition-all hover:scale-[1.02] px-4 mb-2 md:mb-0"
                 disabled={mutation.isPending}
                 data-testid="button-submit-request"
               >
@@ -396,6 +396,9 @@ export default function ConciergeForm() {
                   </>
                 )}
               </Button>
+              <p className="lg:hidden text-[11px] text-gray-500 text-center mt-2">
+                By submitting, you agree to our <a href="/terms" className="underline">Terms of Service</a> and <a href="/privacy" className="underline">Privacy</a>
+              </p>
               <div className="hidden lg:block space-y-1 mt-1">
                 <p className="text-[13px] text-gray-400 text-center">
                   By submitting, you agree to our{" "}
