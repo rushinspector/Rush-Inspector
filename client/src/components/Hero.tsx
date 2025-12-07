@@ -77,7 +77,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Right Column: Form */}
-          <div className="lg:pl-12 -mt-16 lg:mt-0">
+          <div className="lg:pl-12 -mt-12 lg:mt-0">
             <ConciergeForm />
           </div>
         </div>
