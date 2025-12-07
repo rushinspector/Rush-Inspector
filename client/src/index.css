@@ -281,7 +281,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 767px) {
   .hero-subtitle {
-    font-size: 17.4px !important;
+    font-size: 17.3px !important;
   }
 }
 
