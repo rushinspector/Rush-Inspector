@@ -299,7 +299,7 @@ export default function ConciergeForm() {
                         </PopoverContent>
                       </Popover>
                       <FormMessage />
-                      <p className="hidden md:block text-[9px] text-muted-foreground">Must be at least 24hrs from time of request.</p>
+                      <p className="hidden md:block text-[9px] text-muted-foreground ml-1">Must be at least 24hrs from time of request.</p>
                     </FormItem>
                   )}
                 />
