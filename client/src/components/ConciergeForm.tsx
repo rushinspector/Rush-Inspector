@@ -129,7 +129,7 @@ export default function ConciergeForm() {
             <span className="hidden md:inline">Book a Rush Home Inspection</span>
           </CardTitle>
           <p className="text-xs form-subtitle text-muted-foreground m-0 p-0">
-            Fill out the details below – we'll text you back within 30 minutes.
+            Fill out the details below – we'll text you within 30 minutes.
           </p>
         </div>
         <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0 mobile-compact-form">
