@@ -123,7 +123,7 @@ export default function ConciergeForm() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <Card className="w-full max-w-[430px] md:max-w-2xl -ml-2 md:mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm scale-[0.97] md:scale-100 origin-top">
+      <Card className="w-full max-w-[450px] md:max-w-2xl md:mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm scale-100 md:scale-100 origin-top">
         <div className="hidden md:block p-6 pt-6 pb-6">
           <CardTitle className="text-lg md:text-2xl mb-0 pb-1">
             <span className="hidden md:inline">Book a Rush Home Inspection</span>
