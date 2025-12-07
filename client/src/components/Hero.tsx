@@ -28,17 +28,30 @@ export default function Hero() {
               <span className="hidden md:inline">Need an inspector <br/><span className="text-accent">fast?</span></span>
             </h1>
             
-            <p className="text-[15px] md:text-2xl lg:text-[32.5px] hero-subtitle text-gray-100 max-w-xl mt-8 md:mt-10 lg:mt-12 font-bold md:font-medium leading-tight">
-              <span className="md:hidden">Home inspector booked within 24 hours—</span>
-              <span className="hidden md:inline md:whitespace-nowrap">Home inspector booked within 24 hours—</span><br/>
+            {/* Mobile version */}
+            <div className="md:hidden space-y-3 text-center -mt-2">
+              <p className="text-[15px] text-white font-medium leading-relaxed">
+                Inspector confirmed within 24 hours
+              </p>
+              <p className="text-[14px] text-gray-200">
+                Pay only when booked · $349 flat fee
+              </p>
+              <p className="text-[13px] text-gray-300">
+                Serving Hamilton County & Greater Cincinnati
+              </p>
+            </div>
+            
+            {/* Desktop version */}
+            <p className="hidden md:block text-2xl lg:text-[32.5px] hero-subtitle text-gray-100 max-w-xl mt-10 lg:mt-12 font-medium leading-tight">
+              <span className="md:whitespace-nowrap">Home inspector booked within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
             
-            <div className="space-y-2 pt-2">
-              <p className="text-gray-200 font-bold text-[14px] md:text-[19px] lg:text-[22px] -mt-3 md:mt-0 lg:mt-6">
+            <div className="hidden md:block space-y-2 pt-2">
+              <p className="text-gray-200 font-bold text-[19px] lg:text-[22px] mt-0 lg:mt-6">
                 Serving Hamilton County & Greater Cincinnati
               </p>
-              <p className="text-white -mt-2 md:mt-8 lg:mt-3 text-[13.5px] md:text-[20px]"><span className="font-semibold md:font-light lg:font-semibold">$349 coordination fee</span><span className="font-light md:text-[19px]"> (inspector paid directly)</span></p>
+              <p className="text-white mt-8 lg:mt-3 text-[20px]"><span className="font-light lg:font-semibold">$349 coordination fee</span><span className="font-light text-[19px]"> (inspector paid directly)</span></p>
             </div>
             
             <div className="hidden md:flex flex-wrap items-center justify-start gap-x-6 md:gap-x-8 gap-y-2 pt-6 lg:pt-6 text-sm text-gray-300">
