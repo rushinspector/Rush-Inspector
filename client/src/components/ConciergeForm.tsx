@@ -385,14 +385,14 @@ export default function ConciergeForm() {
 
               <Button 
                 type="submit" 
-                className="w-full md:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[14px] md:text-lg h-10 md:h-12 shadow-md transition-all hover:scale-[1.02] px-4 mb-2 md:mb-0"
+                className="w-full md:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[14px] h-10 md:h-12 shadow-md transition-all hover:scale-[1.02] px-4 mb-2 md:mb-0"
                 disabled={mutation.isPending}
                 data-testid="button-submit-request"
               >
                 {mutation.isPending ? "Submitting..." : (
                   <>
-                    <span className="hidden md:inline" style={{ fontSize: '17px' }}>Find My Inspector</span>
-                    <span className="md:hidden" style={{ fontSize: '18px' }}>Book My Inspector</span>
+                    <span className="hidden md:inline text-[17px]">Find My Inspector</span>
+                    <span className="md:hidden text-[18px]">Book My Inspector</span>
                   </>
                 )}
               </Button>
