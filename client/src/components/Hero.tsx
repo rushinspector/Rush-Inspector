@@ -4,7 +4,7 @@ import heroImage from "@assets/generated_images/professional_home_inspection_con
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden bg-gray-50">
+    <section className="relative min-h-0 md:min-h-screen flex items-center justify-center py-12 md:py-20 overflow-hidden bg-gray-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-primary/80 mix-blend-multiply z-10" />
