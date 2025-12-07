@@ -259,12 +259,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /* Hero title sizing */
 .hero-title {
-  font-size: 74.5px !important;
+  font-size: 72.5px !important;
 }
 
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 73.5px !important;
+    font-size: 71.5px !important;
   }
 }
 
