@@ -132,15 +132,6 @@ export default function ConciergeForm() {
             Fill out the details below – we'll text you within 30 minutes.
           </p>
         </div>
-        <CardHeader className="md:hidden p-2 pt-1">
-          <CardTitle className="text-lg md:text-2xl">
-            <span className="inline md:hidden">Book an Inspector</span>
-            <span className="hidden md:inline">Book a Rush Home Inspection</span>
-          </CardTitle>
-          <CardDescription className="text-xs md:text-sm -mt-4">
-            Fill out the details below – we'll text you within 30 minutes.
-          </CardDescription>
-        </CardHeader>
         <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0 mobile-compact-form">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1.5 md:space-y-4 form-spacing">
