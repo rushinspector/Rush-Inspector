@@ -33,7 +33,7 @@ export default function Hero() {
               <p className="text-[20px] text-white font-semibold leading-snug">
                 Inspector confirmed within 24 hours
               </p>
-              <p className="text-[14px] text-gray-100 font-normal">
+              <p className="text-[17px] text-gray-100 font-normal">
                 Pay only when booked · $349 flat fee
               </p>
               <p className="text-[12px] text-gray-300 font-light tracking-wide">
