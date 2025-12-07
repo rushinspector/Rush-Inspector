@@ -41,7 +41,7 @@ export default function Hero() {
               <p className="text-white -mt-2 md:mt-8 lg:mt-3 text-[13.5px] md:text-[20px]"><span className="font-semibold md:font-light lg:font-semibold">$349 coordination fee</span><span className="font-light md:text-[19px]"> (inspector paid directly)</span></p>
             </div>
             
-            <div className="hidden md:flex flex-wrap items-center justify-start gap-x-6 md:gap-x-8 gap-y-2 pt-6 lg:pt-8 text-sm text-gray-300">
+            <div className="hidden md:flex flex-wrap items-center justify-start gap-x-6 md:gap-x-8 gap-y-2 pt-6 lg:pt-6 text-sm text-gray-300">
               <div className="flex items-center gap-2 text-[18px]">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
