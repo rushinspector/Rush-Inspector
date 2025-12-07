@@ -66,9 +66,6 @@ export default function Hero() {
           {/* Right Column: Form */}
           <div className="lg:pl-12 -mt-12 lg:mt-0">
             <ConciergeForm />
-            <p className="lg:hidden text-[10px] text-gray-300 text-center mt-1">
-              Licensed & insured professionals; verify independently.
-            </p>
           </div>
         </div>
       </div>
