@@ -198,7 +198,7 @@ export default function ConciergeForm() {
                   name="sqFt"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Sq. Ft.</FormLabel>
+                      <FormLabel className="text-[13px] md:text-[14px]"><span className="md:hidden">Sq. Ft.</span><span className="hidden md:inline">Home Size (sq ft)</span></FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
