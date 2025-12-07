@@ -24,8 +24,8 @@ export default function Hero() {
             className="text-white space-y-5"
           >
             <h1 className="hero-title font-display font-bold leading-[1.25] md:leading-[1.1] lg:leading-[1.2]">
-              Can't find an <br/>
-              <span className="text-accent">inspector?</span>
+              <span className="md:hidden">Need an <br/><span className="text-accent">inspector?</span></span>
+              <span className="hidden md:inline">Can't find an <br/><span className="text-accent">inspector?</span></span>
             </h1>
             
             <p className="text-[15px] md:text-2xl lg:text-[32.5px] hero-subtitle text-gray-100 max-w-xl mt-8 md:mt-10 lg:mt-12 font-bold md:font-medium leading-tight">
