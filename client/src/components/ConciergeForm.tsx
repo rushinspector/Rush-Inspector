@@ -393,7 +393,7 @@ export default function ConciergeForm() {
                 {mutation.isPending ? "Submitting..." : (
                   <>
                     <span className="hidden md:inline text-[17px]">Find My Inspector</span>
-                    <span className="md:hidden text-[18px]">Book My Inspector</span>
+                    <span className="md:hidden text-[18px]">Book My Inspection</span>
                   </>
                 )}
               </Button>
