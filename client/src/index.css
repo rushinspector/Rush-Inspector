@@ -349,6 +349,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .form-disclaimer-link {
     font-size: 8px !important;
   }
+  
+  .form-disclaimer-secondary {
+    font-size: 10px !important;
+  }
 }
 
 /* Mobile form compact styling */
