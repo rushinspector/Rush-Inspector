@@ -29,7 +29,7 @@ export default function Hero() {
             </h1>
             
             {/* Mobile version */}
-            <div className="md:hidden space-y-1.5 text-left -mt-2">
+            <div className="md:hidden space-y-1.5 text-left mt-2">
               <p className="text-[20px] text-white font-semibold leading-snug">
                 Inspector confirmed within 24 hours
               </p>
