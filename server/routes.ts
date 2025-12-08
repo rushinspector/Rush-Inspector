@@ -13,38 +13,41 @@ export async function registerRoutes(
       const validatedData = insertInspectionRequestSchema.parse(req.body);
       const result = await storage.createInspectionRequest(validatedData);
 
-      // If user configures Airtable, send data there as well
-      if (process.env.AIRTABLE_API_KEY && process.env.AIRTABLE_BASE_ID && process.env.AIRTABLE_TABLE_NAME) {
+      // Send data to Airtable
+      if (process.env.AIRTABLE_ACCESS_TOKEN && process.env.AIRTABLE_BASE_ID && process.env.AIRTABLE_TABLE_NAME) {
         try {
           const airtableResponse = await fetch(
-            `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/${process.env.AIRTABLE_TABLE_NAME}`,
+            `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/${encodeURIComponent(process.env.AIRTABLE_TABLE_NAME)}`,
             {
               method: 'POST',
               headers: {
-                'Authorization': `Bearer ${process.env.AIRTABLE_API_KEY}`,
+                'Authorization': `Bearer ${process.env.AIRTABLE_ACCESS_TOKEN}`,
                 'Content-Type': 'application/json',
               },
               body: JSON.stringify({
                 fields: {
                   'Full Name': validatedData.fullName,
-                  'Company Name': validatedData.companyName,
+                  'Agency/Brokerage': validatedData.companyName,
                   'Phone Number': validatedData.phoneNumber,
+                  'Home Size (sq ft)': validatedData.sqFt || '',
                   'Inspection Address': validatedData.inspectionAddress,
-                  'Sq. Ft.': validatedData.sqFt || '',
                   'Inspection Date': validatedData.inspectionDate,
                   'Time of Inspection': validatedData.timeOfInspection,
                   'Add-ons': validatedData.addOns || '',
-                  'How did you hear about us?': validatedData.hearAboutUs || '',
+                  'Reffered By': validatedData.hearAboutUs || '',
                 }
               })
             }
           );
 
           if (!airtableResponse.ok) {
-            console.error('Airtable sync failed:', await airtableResponse.text());
+            const errorText = await airtableResponse.text();
+            console.error('Airtable sync failed:', errorText);
+            throw new Error(`Airtable sync failed: ${errorText}`);
           }
         } catch (error) {
           console.error('Error syncing to Airtable:', error);
+          throw error;
         }
       }
 
