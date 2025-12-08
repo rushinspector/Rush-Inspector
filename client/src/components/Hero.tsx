@@ -34,7 +34,7 @@ export default function Hero() {
                 Inspector booked within 24 hours
               </p>
               <p className="text-[16px] text-gray-100 font-normal">
-                Pay only when booked · $349 flat fee
+                Pay only when confirmed · $349 flat fee
               </p>
               <p className="text-[14px] text-gray-300 font-light tracking-wide">
                 Serving Hamilton County & Greater Cincinnati
