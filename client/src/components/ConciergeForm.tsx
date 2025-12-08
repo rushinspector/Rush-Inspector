@@ -98,7 +98,7 @@ export default function ConciergeForm() {
     onSuccess: () => {
       toast({
         title: "Request Received",
-        description: "We have received your rush inspection request. Our concierge will contact you shortly to confirm.",
+        description: "We have received your request for a rush home inspection. We will contact you shortly to confirm.",
         duration: 5000,
       });
       form.reset();
