@@ -138,7 +138,7 @@ export default function ConciergeForm() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Full Name</FormLabel>
+                      <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">Full Name</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -156,7 +156,7 @@ export default function ConciergeForm() {
                   name="companyName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Agency / Brokerage</FormLabel>
+                      <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">Agency / Brokerage</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -177,7 +177,7 @@ export default function ConciergeForm() {
                   name="phoneNumber"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Phone Number</FormLabel>
+                      <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">Phone Number</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -195,7 +195,7 @@ export default function ConciergeForm() {
                   name="sqFt"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]"><span className="md:hidden">Sq. Ft.</span><span className="hidden md:inline">Home Size (sq ft)</span></FormLabel>
+                      <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]"><span className="md:hidden">Sq. Ft.</span><span className="hidden md:inline">Home Size (sq ft)</span></FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -215,7 +215,7 @@ export default function ConciergeForm() {
                 name="inspectionAddress"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] md:text-[14px]">Inspection Address</FormLabel>
+                    <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">Inspection Address</FormLabel>
                     <FormControl>
                       <Input 
                         placeholder="" 
@@ -235,7 +235,7 @@ export default function ConciergeForm() {
                   name="inspectionDate"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Inspection Date</FormLabel>
+                      <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">Inspection Date</FormLabel>
                       <Popover open={datePickerOpen} onOpenChange={setDatePickerOpen}>
                         <PopoverTrigger asChild>
                           <FormControl>
@@ -296,7 +296,7 @@ export default function ConciergeForm() {
                         </PopoverContent>
                       </Popover>
                       <FormMessage />
-                      <p className="text-[9px] text-muted-foreground ml-1 whitespace-nowrap">Must be at least 24hrs from time of request.</p>
+                      <p className="text-[8px] xs:text-[9px] text-muted-foreground ml-1 whitespace-nowrap">Must be at least 24hrs from time of request.</p>
                     </FormItem>
                   )}
                 />
@@ -305,7 +305,7 @@ export default function ConciergeForm() {
                   name="timeOfInspection"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Time of Inspection</FormLabel>
+                      <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">Time of Inspection</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="bg-white select-trigger-compact" data-testid="select-time-of-inspection">
@@ -340,7 +340,7 @@ export default function ConciergeForm() {
                 name="addOns"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] md:text-[14px]">Add-ons</FormLabel>
+                    <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">Add-ons</FormLabel>
                     <FormControl>
                       <Textarea 
                         placeholder="Radon testing, mold inspection, etc." 
@@ -359,7 +359,7 @@ export default function ConciergeForm() {
                 name="hearAboutUs"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] md:text-[14px]">How did you hear about us?</FormLabel>
+                    <FormLabel className="text-[11px] xs:text-[13px] md:text-[14px]">How did you hear about us?</FormLabel>
                     <FormControl>
                       <Input 
                         {...field} 
@@ -390,14 +390,14 @@ export default function ConciergeForm() {
                 {mutation.isPending ? "Submitting..." : (
                   <>
                     <span className="hidden md:inline text-[17px]">Book My Inspection</span>
-                    <span className="md:hidden text-[18px]">Book My Inspection</span>
+                    <span className="md:hidden text-[15px] xs:text-[18px]">Book My Inspection</span>
                   </>
                 )}
               </Button>
-              <p className="lg:hidden text-[9.7px] text-gray-500 text-center mt-2">
-                By submitting, you agree to our <a href="/terms" className="underline text-[9.7px]">Terms of Service</a> and <a href="/privacy" className="underline text-[9.7px]">Privacy Policy</a>.
+              <p className="lg:hidden text-[8.5px] xs:text-[9.7px] text-gray-500 text-center mt-2">
+                By submitting, you agree to our <a href="/terms" className="underline text-[8.5px] xs:text-[9.7px]">Terms of Service</a> and <a href="/privacy" className="underline text-[8.5px] xs:text-[9.7px]">Privacy Policy</a>.
               </p>
-              <p className="lg:hidden text-[9.5px] text-gray-500 text-center -mt-2">
+              <p className="lg:hidden text-[8px] xs:text-[9.5px] text-gray-500 text-center -mt-2">
                 Licensed & insured professionals; verify independently.
               </p>
               <div className="hidden lg:block space-y-1 mt-2">

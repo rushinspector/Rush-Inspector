@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --breakpoint-xs: 390px;
+  
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -271,6 +273,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 @media (max-width: 767px) {
   .hero-title {
     font-size: 42.5px !important;
+  }
+}
+
+@media (max-width: 389px) {
+  .hero-title {
+    font-size: 36px !important;
   }
 }
 

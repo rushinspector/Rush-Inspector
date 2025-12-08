@@ -29,14 +29,14 @@ export default function Hero() {
             </h1>
             
             {/* Mobile version */}
-            <div className="md:hidden space-y-1.5 text-left mt-2">
-              <p className="text-[20.7px] text-white font-semibold leading-snug">
+            <div className="md:hidden space-y-1 xs:space-y-1.5 text-left mt-2">
+              <p className="text-[17.5px] xs:text-[20.7px] text-white font-semibold leading-snug">
                 Inspector booked within 24 hours
               </p>
-              <p className="text-[16.7px] text-gray-100 font-normal">
+              <p className="text-[14px] xs:text-[16.7px] text-gray-100 font-normal">
                 Pay only when confirmed · $349 flat fee
               </p>
-              <p className="text-[14.7px] text-gray-300 font-normal tracking-wide">
+              <p className="text-[12.5px] xs:text-[14.7px] text-gray-300 font-normal tracking-wide">
                 Serving Hamilton County & Greater Cincinnati
               </p>
             </div>
