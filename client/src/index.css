@@ -276,12 +276,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 
-@media (max-width: 389px) {
-  .hero-title {
-    font-size: 36px !important;
-  }
-}
-
 /* Hero subtitle sizing */
 .hero-subtitle {
   font-size: 30.5px !important;
