@@ -129,7 +129,7 @@ export default function ConciergeForm() {
             Fill out the details below – we'll text you within 30 minutes.
           </p>
         </div>
-        <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0 md:pb-4 mobile-compact-form">
+        <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0 md:pb-2 mobile-compact-form">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1.5 md:space-y-4 form-spacing">
               <div className="grid grid-cols-2 gap-1.5 md:gap-4 grid-spacing">
