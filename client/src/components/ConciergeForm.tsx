@@ -401,7 +401,7 @@ export default function ConciergeForm() {
                 Licensed & insured professionals; verify independently.
               </p>
               <div className="hidden lg:block space-y-1 mt-1">
-                <p className="text-[12px] text-gray-400 text-center">
+                <p className="text-[12px] text-gray-400 text-center mt-0.5">
                   By submitting, you agree to our{" "}
                   <a href="/terms" className="underline hover:text-gray-600" data-testid="link-terms">Terms of Service</a>
                   {" "}and{" "}
