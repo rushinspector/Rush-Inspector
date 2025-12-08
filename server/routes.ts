@@ -34,7 +34,7 @@ export async function registerRoutes(
                   'Inspection Date': validatedData.inspectionDate,
                   'Time of Inspection': validatedData.timeOfInspection,
                   'Add-ons': validatedData.addOns || '',
-                  'Reffered By': validatedData.hearAboutUs || '',
+                  'Referred By': validatedData.hearAboutUs || '',
                 }
               })
             }
