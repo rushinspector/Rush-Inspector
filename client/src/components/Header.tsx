@@ -18,7 +18,7 @@ export default function Header() {
                 <path d="M8 17L12 12L16 17" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
               </svg>
             </div>
-            <span className="font-display font-bold text-primary tracking-tight text-[24px]">Rush Inspector</span>
+            <span className="font-display font-bold text-primary tracking-tight text-[24px] header-brand whitespace-nowrap">Rush Inspector</span>
           </div>
         </motion.div>
         <a 

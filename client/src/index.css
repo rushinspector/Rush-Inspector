@@ -320,6 +320,29 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 
+/* iPhone SE specific fixes (375px and below) */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 36px !important;
+  }
+  
+  .header-brand {
+    font-size: 20px !important;
+  }
+  
+  .hero-mobile-headline {
+    font-size: 17px !important;
+  }
+  
+  .hero-mobile-subline {
+    font-size: 14px !important;
+  }
+  
+  .hero-mobile-location {
+    font-size: 12.5px !important;
+  }
+}
+
 /* Mobile form compact styling */
 @media (max-width: 767px) {
   .mobile-compact-form input,
