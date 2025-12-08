@@ -384,3 +384,57 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     gap: 6px !important;
   }
 }
+
+/* iPad Mini (768px) and iPad Air (820px) specific styles */
+/* This targets tablet range without affecting mobile (<768px) or desktop (>=1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Make hero section use mobile-like stacked layout on tablets */
+  .hero-tablet-stack {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  /* Hero title sizing for tablets - match mobile style */
+  .hero-title {
+    font-size: 48px !important;
+  }
+  
+  /* Hero subtitle sizing for tablets */
+  .hero-subtitle {
+    font-size: 20px !important;
+  }
+  
+  /* Form card sizing for tablets - centered like mobile */
+  .tablet-form-card {
+    max-width: 450px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Form compact styling for tablets to match mobile */
+  .mobile-compact-form input,
+  .mobile-compact-form .select-trigger-compact {
+    height: 36px !important;
+    min-height: 36px !important;
+    font-size: 14px !important;
+  }
+  
+  .mobile-compact-form textarea {
+    font-size: 13px !important;
+    min-height: 36px !important;
+    height: 40px !important;
+  }
+  
+  .mobile-compact-form label {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+  }
+  
+  .mobile-compact-form .form-spacing {
+    gap: 8px !important;
+  }
+  
+  .mobile-compact-form .grid-spacing {
+    gap: 8px !important;
+  }
+}

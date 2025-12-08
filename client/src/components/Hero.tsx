@@ -4,7 +4,7 @@ import heroImage from "@assets/generated_images/professional_home_inspection_con
 
 export default function Hero() {
   return (
-    <section className="relative min-h-0 md:min-h-screen flex items-center justify-center pt-16 pb-12 md:py-20 overflow-hidden bg-gray-50">
+    <section className="relative min-h-0 lg:min-h-screen flex items-center justify-center pt-16 pb-12 lg:py-20 overflow-hidden bg-gray-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-primary/80 mix-blend-multiply z-10" />
@@ -23,13 +23,13 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-white space-y-5"
           >
-            <h1 className="hero-title font-display font-bold leading-[1.25] md:leading-[1.1] lg:leading-[1.2]">
-              <span className="md:hidden inline-block pt-1">Need an inspector <br/><span className="text-accent">fast?</span></span>
-              <span className="hidden md:inline">Need an inspector <br/><span className="text-accent">fast?</span></span>
+            <h1 className="hero-title font-display font-bold leading-[1.25] lg:leading-[1.2]">
+              <span className="lg:hidden inline-block pt-1">Need an inspector <br/><span className="text-accent">fast?</span></span>
+              <span className="hidden lg:inline">Need an inspector <br/><span className="text-accent">fast?</span></span>
             </h1>
             
-            {/* Mobile version */}
-            <div className="md:hidden space-y-1.5 text-left mt-2">
+            {/* Mobile and Tablet version */}
+            <div className="lg:hidden space-y-1.5 text-left mt-2">
               <p className="text-[20.7px] text-white font-semibold leading-snug hero-mobile-headline whitespace-nowrap">
                 Inspector booked within 24 hours
               </p>
@@ -41,20 +41,20 @@ export default function Hero() {
               </p>
             </div>
             
-            {/* Desktop version */}
-            <p className="hidden md:block text-2xl lg:text-[32.5px] hero-subtitle text-gray-100 max-w-xl mt-10 lg:mt-12 font-medium leading-tight">
-              <span className="md:whitespace-nowrap">Home inspector booked within 24 hours—</span><br/>
+            {/* Desktop version (lg and above only) */}
+            <p className="hidden lg:block text-2xl lg:text-[32.5px] hero-subtitle text-gray-100 max-w-xl mt-10 lg:mt-12 font-medium leading-tight">
+              <span className="lg:whitespace-nowrap">Home inspector booked within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
             
-            <div className="hidden md:block space-y-2 pt-2">
+            <div className="hidden lg:block space-y-2 pt-2">
               <p className="text-gray-200 font-bold text-[19px] lg:text-[22px] mt-0 lg:mt-6">
                 Serving Hamilton County & Greater Cincinnati
               </p>
               <p className="text-white mt-8 lg:mt-3 text-[20px]"><span className="font-light lg:font-semibold">$349 coordination fee</span><span className="font-light text-[19px]"> (inspector paid directly)</span></p>
             </div>
             
-            <div className="hidden md:flex flex-wrap items-center justify-start gap-x-6 md:gap-x-8 gap-y-2 pt-6 lg:pt-6 text-sm text-gray-300">
+            <div className="hidden lg:flex flex-wrap items-center justify-start gap-x-6 lg:gap-x-8 gap-y-2 pt-6 lg:pt-6 text-sm text-gray-300">
               <div className="flex items-center gap-2 text-[18px]">
                 <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

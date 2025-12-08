@@ -123,22 +123,22 @@ export default function ConciergeForm() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <Card className="w-full max-w-[450px] md:max-w-2xl md:mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm scale-100 md:scale-100 origin-top">
-        <div className="hidden md:block p-6 pt-2 pb-3">
+      <Card className="w-full max-w-[450px] lg:max-w-2xl lg:mx-auto shadow-xl border-t-4 border-t-accent bg-white/95 backdrop-blur-sm scale-100 lg:scale-100 origin-top">
+        <div className="hidden lg:block p-6 pt-2 pb-3">
           <p className="text-xs form-subtitle text-muted-foreground m-0 p-0">
             Fill out the details below – we'll text you within 30 minutes.
           </p>
         </div>
-        <CardContent className="p-2 pt-0.5 pb-0 md:p-6 md:pt-0 md:pb-2 mobile-compact-form">
+        <CardContent className="p-2 pt-0.5 pb-0 lg:p-6 lg:pt-0 lg:pb-2 mobile-compact-form">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1.5 md:space-y-4 form-spacing">
-              <div className="grid grid-cols-2 gap-1.5 md:gap-4 grid-spacing">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1.5 lg:space-y-4 form-spacing">
+              <div className="grid grid-cols-2 gap-1.5 lg:gap-4 grid-spacing">
                 <FormField
                   control={form.control}
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Full Name</FormLabel>
+                      <FormLabel className="text-[13px] lg:text-[14px]">Full Name</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -156,7 +156,7 @@ export default function ConciergeForm() {
                   name="companyName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Agency / Brokerage</FormLabel>
+                      <FormLabel className="text-[13px] lg:text-[14px]">Agency / Brokerage</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -171,13 +171,13 @@ export default function ConciergeForm() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-1.5 md:gap-4 grid-spacing">
+              <div className="grid grid-cols-2 gap-1.5 lg:gap-4 grid-spacing">
                 <FormField
                   control={form.control}
                   name="phoneNumber"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Phone Number</FormLabel>
+                      <FormLabel className="text-[13px] lg:text-[14px]">Phone Number</FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -195,7 +195,7 @@ export default function ConciergeForm() {
                   name="sqFt"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]"><span className="md:hidden">Sq. Ft.</span><span className="hidden md:inline">Home Size (sq ft)</span></FormLabel>
+                      <FormLabel className="text-[13px] lg:text-[14px]"><span className="lg:hidden">Sq. Ft.</span><span className="hidden lg:inline">Home Size (sq ft)</span></FormLabel>
                       <FormControl>
                         <Input 
                           placeholder="" 
@@ -215,7 +215,7 @@ export default function ConciergeForm() {
                 name="inspectionAddress"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] md:text-[14px]">Inspection Address</FormLabel>
+                    <FormLabel className="text-[13px] lg:text-[14px]">Inspection Address</FormLabel>
                     <FormControl>
                       <Input 
                         placeholder="" 
@@ -229,13 +229,13 @@ export default function ConciergeForm() {
                 )}
               />
 
-              <div className="grid grid-cols-2 gap-1.5 md:gap-4 grid-spacing">
+              <div className="grid grid-cols-2 gap-1.5 lg:gap-4 grid-spacing">
                 <FormField
                   control={form.control}
                   name="inspectionDate"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Inspection Date</FormLabel>
+                      <FormLabel className="text-[13px] lg:text-[14px]">Inspection Date</FormLabel>
                       <Popover open={datePickerOpen} onOpenChange={setDatePickerOpen}>
                         <PopoverTrigger asChild>
                           <FormControl>
@@ -305,7 +305,7 @@ export default function ConciergeForm() {
                   name="timeOfInspection"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[13px] md:text-[14px]">Time of Inspection</FormLabel>
+                      <FormLabel className="text-[13px] lg:text-[14px]">Time of Inspection</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="bg-white select-trigger-compact" data-testid="select-time-of-inspection">
@@ -340,11 +340,11 @@ export default function ConciergeForm() {
                 name="addOns"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] md:text-[14px]">Add-ons</FormLabel>
+                    <FormLabel className="text-[13px] lg:text-[14px]">Add-ons</FormLabel>
                     <FormControl>
                       <Textarea 
                         placeholder="Radon testing, mold inspection, etc." 
-                        className="resize-none bg-white text-[13px] md:text-sm placeholder:text-[13px] md:placeholder:text-sm h-9 md:h-28 lg:h-20 overflow-hidden md:overflow-auto" 
+                        className="resize-none bg-white text-[13px] lg:text-sm placeholder:text-[13px] lg:placeholder:text-sm h-9 lg:h-20 overflow-hidden lg:overflow-auto" 
                         {...field}
                         data-testid="textarea-add-ons"
                       />
@@ -359,7 +359,7 @@ export default function ConciergeForm() {
                 name="hearAboutUs"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] md:text-[14px]">How did you hear about us?</FormLabel>
+                    <FormLabel className="text-[13px] lg:text-[14px]">How did you hear about us?</FormLabel>
                     <FormControl>
                       <Input 
                         {...field} 
@@ -369,10 +369,10 @@ export default function ConciergeForm() {
                     </FormControl>
                     {form.formState.errors.hearAboutUs && (
                       <>
-                        <p className="hidden md:block text-[0.65rem] font-medium text-destructive">
+                        <p className="hidden lg:block text-[0.65rem] font-medium text-destructive">
                           Please tell us how you heard about us
                         </p>
-                        <p className="md:hidden text-[0.65rem] font-medium text-destructive">
+                        <p className="lg:hidden text-[0.65rem] font-medium text-destructive">
                           Please tell us how you heard about us. Thank you!
                         </p>
                       </>
@@ -383,14 +383,14 @@ export default function ConciergeForm() {
 
               <Button 
                 type="submit" 
-                className="w-full md:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[14px] h-10 md:h-12 shadow-md transition-all hover:scale-[1.02] px-4 mb-2 md:mb-0"
+                className="w-full lg:w-full mx-auto bg-accent hover:bg-accent/90 text-white font-semibold text-[14px] h-10 lg:h-12 shadow-md transition-all hover:scale-[1.02] px-4 mb-2 lg:mb-0"
                 disabled={mutation.isPending}
                 data-testid="button-submit-request"
               >
                 {mutation.isPending ? "Submitting..." : (
                   <>
-                    <span className="hidden md:inline text-[17px]">Book My Inspection</span>
-                    <span className="md:hidden text-[18px]">Book My Inspection</span>
+                    <span className="hidden lg:inline text-[17px]">Book My Inspection</span>
+                    <span className="lg:hidden text-[18px]">Book My Inspection</span>
                   </>
                 )}
               </Button>
