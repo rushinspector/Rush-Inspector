@@ -350,6 +350,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 9px !important;
   }
   
+  .form-disclaimer-secondary {
+    font-size: 9px !important;
+  }
 }
 
 /* Mobile form compact styling */

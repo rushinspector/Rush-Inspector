@@ -397,7 +397,7 @@ export default function ConciergeForm() {
               <p className="lg:hidden text-[9.7px] text-gray-500 text-center mt-2 form-disclaimer whitespace-nowrap">
                 By submitting, you agree to our <a href="/terms" className="underline form-disclaimer-link">Terms of Service</a> and <a href="/privacy" className="underline form-disclaimer-link">Privacy Policy</a>.
               </p>
-              <p className="lg:hidden text-[9.5px] text-gray-500 text-center -mt-2">
+              <p className="lg:hidden text-[9.5px] text-gray-500 text-center -mt-2 form-disclaimer-secondary">
                 Licensed & insured professionals; verify independently.
               </p>
               <div className="hidden lg:block space-y-1 mt-2">
