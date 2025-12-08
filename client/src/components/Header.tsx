@@ -23,7 +23,7 @@ export default function Header() {
         </motion.div>
         <a 
           href="tel:5138777874" 
-          className="md:hidden flex items-center gap-1.5 text-primary underline underline-offset-2 text-[12px] mt-[18px]"
+          className="md:hidden flex items-center gap-1.5 text-primary underline underline-offset-2 text-[12px] mt-[22px]"
           data-testid="link-phone-mobile"
         >
           <Phone className="w-4 h-4" />
