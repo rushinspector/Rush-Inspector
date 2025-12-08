@@ -407,7 +407,7 @@ export default function ConciergeForm() {
                   {" "}and{" "}
                   <a href="/privacy" className="underline hover:text-gray-600" data-testid="link-privacy">Privacy Policy</a>.
                 </p>
-                <p className="text-[11px] text-gray-400 text-center">
+                <p className="text-[11px] text-gray-400 text-center -mt-0.5">
                   We match licensed & insured professionals; verify independently.
                 </p>
               </div>
