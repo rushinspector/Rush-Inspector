@@ -36,7 +36,7 @@ export default function Hero() {
               <p className="text-[16px] text-gray-100 font-normal">
                 Pay only when confirmed · $349 flat fee
               </p>
-              <p className="text-[14px] text-gray-300 font-light tracking-wide">
+              <p className="text-[14px] text-gray-300 font-normal tracking-wide">
                 Serving Hamilton County & Greater Cincinnati
               </p>
             </div>
