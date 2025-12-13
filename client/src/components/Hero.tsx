@@ -42,7 +42,7 @@ export default function Hero() {
             </div>
             
             {/* Desktop version (lg and above only) */}
-            <p className="hidden lg:block text-2xl lg:text-[30.5px] hero-subtitle text-gray-100 max-w-xl mt-10 lg:mt-12 font-medium leading-tight">
+            <p className="hidden lg:block text-2xl lg:text-[28px] hero-subtitle text-gray-100 max-w-xl mt-10 lg:mt-12 font-medium leading-tight">
               <span className="lg:whitespace-nowrap">Home inspector booked within 24 hours—</span><br/>
               pay only when confirmed.
             </p>
